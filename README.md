@@ -3,6 +3,8 @@ ember-bem-helpers
 
 This addon provides [BEM](https://en.bem.info/) helpers for Ember.js applications.
 
+This addon produces BEM classes based on [Two Dashes style](https://en.bem.info/methodology/naming-convention/#two-dashes-style).
+
 No mixins, no code in the component js/ts file needed. Works with template-only components.
 
 
@@ -33,7 +35,7 @@ Use `bem` helper everywhere you need to get a BEM class.
 
 Here is a basic example:
 
-```
+```hbs
 {{block-name "my-button"}}
 
 <button
@@ -51,7 +53,7 @@ Defining a block outside of the component
 
 You can pass a variable to the `block-name` helper like this:
 
-```
+```hbs
 {{block-name @externalBlockName}}
 ```
 
@@ -68,7 +70,7 @@ This addon provides AST plugin which transforms `block-name` (which is actually 
 
 So, the above basic example is transformed to the following:
 
-```
+```hbs
 {{#let "my-button" as |blockName|}}
   <button
     class={{bem blockName disabled=@isDisabled}}
