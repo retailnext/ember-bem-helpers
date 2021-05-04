@@ -92,7 +92,7 @@ See the [Contributing](CONTRIBUTING.md) guide for details.
 Thanks!
 ------------------------------------------------------------------------------
 
-This addon is based on the great addon [ember-cli-bem](https://github.com/nikityy/ember-cli-bem) by @nikityy.
+This addon is based on the great addon [ember-cli-bem](https://github.com/nikityy/ember-cli-bem) by [Nikita Gusarov](https://github.com/nikityy).
 
 
 License
