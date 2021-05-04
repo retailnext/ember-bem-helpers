@@ -7,12 +7,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/retailnext/ember-bem-helpers.git"
+    "url": "git+https://github.com/retailnext/ember-bem-helpers.git"
   },
   "license": "MIT",
   "author": "RetailNext",
   "directories": {
-    "doc": "doc",
+    "lib": "lib",
     "test": "tests"
   },
   "scripts": {
@@ -76,5 +76,10 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/retailnext/ember-bem-helpers/issues"
+  },
+  "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
+  "main": "index.js"
 }
