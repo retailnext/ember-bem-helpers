@@ -1,13 +1,16 @@
 {
   "name": "ember-bem-helpers",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "BEM helpers for Ember.js applications",
   "keywords": [
     "ember-addon"
   ],
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/retailnext/ember-bem-helpers.git"
+  },
   "license": "MIT",
-  "author": "",
+  "author": "RetailNext",
   "directories": {
     "doc": "doc",
     "test": "tests"
