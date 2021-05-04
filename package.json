@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "description": "BEM helpers for Ember.js applications",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "BEM",
+    "helper"
   ],
   "repository": {
     "type": "git",
