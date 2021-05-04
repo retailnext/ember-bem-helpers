@@ -1,6 +1,6 @@
 {
   "name": "ember-bem-helpers",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "BEM helpers for Ember.js applications",
   "keywords": [
     "ember-addon",
