@@ -1,6 +1,8 @@
 ember-bem-helpers
 ==============================================================================
 
+<a href="https://github.com/retailnext/ember-bem-helpers/actions"><img alt="Build Status" src="https://github.com/retailnext/ember-bem-helpers/workflows/CI/badge.svg"></a>
+
 This addon provides [BEM](https://en.bem.info/) helpers for Ember.js applications.
 
 This addon produces BEM classes based on [Two Dashes style](https://en.bem.info/methodology/naming-convention/#two-dashes-style).
