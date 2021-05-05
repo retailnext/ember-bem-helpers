@@ -35,6 +35,8 @@ on:
     branches:
       - master
   pull_request:
+  schedule:
+    - cron: '0 4 * * 2' # every Tuesday at 4am
 
 env:
   NODE_VERSION: '10'
