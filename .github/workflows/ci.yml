@@ -17,6 +17,7 @@
 #$ emberTryScenarios:
 #$   - scenario: ember-lts-3.16
 #$   - scenario: ember-lts-3.20
+#$   - scenario: ember-lts-3.24
 #$   - scenario: ember-release
 #$   - scenario: ember-beta
 #$   - scenario: ember-canary
@@ -178,6 +179,7 @@ jobs:
         ember-try-scenario: [
           ember-lts-3.16,
           ember-lts-3.20,
+          ember-lts-3.24,
           ember-release,
           ember-beta,
           ember-canary,
