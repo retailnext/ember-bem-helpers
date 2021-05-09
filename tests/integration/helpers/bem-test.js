@@ -29,6 +29,21 @@ module('Integration | Helper | bem', function (hooks) {
     assert.dom('.foo').hasClass('foo--mod', 'Mod class added');
   });
 
+  test('sub-expression', async function (assert) {
+    this.set('isMod', false);
+
+    await render(hbs`
+      {{block-name "foo"}}
+      <div class={{concat (bem mod=this.isMod) " baz"}}></div>
+    `);
+
+    assert.dom('.foo').doesNotHaveClass('foo--mod', 'No mod class added');
+
+    this.set('isMod', true);
+    assert.dom('.foo').hasClass('foo--mod', 'Mod class added');
+    assert.dom('.foo').hasClass('baz', 'Concatenated class is there');
+  });
+
   test('elem', async function (assert) {
     await render(hbs`
       {{block-name "foo"}}
