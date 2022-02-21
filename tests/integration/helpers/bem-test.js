@@ -114,7 +114,7 @@ module('Integration | Helper | bem', function (hooks) {
         <div class={{bem mod=@modValue}}></div>
       {{/let}}`);
 
-    assert.equal(
+    assert.strictEqual(
       this.element.querySelector('.foo')?.classList.length,
       1,
       'No modifier classes were added'
