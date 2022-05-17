@@ -73,9 +73,10 @@
     "webpack": "^5.72.1"
   },
   "pnpm": {
-    "overrides": {
-      "consolidate": "^0.16.0",
-      "mustache": "^4.2.0"
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "mustache": "3"
+      }
     }
   },
   "engines": {
