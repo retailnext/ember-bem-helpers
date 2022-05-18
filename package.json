@@ -72,13 +72,6 @@
     "qunit-dom": "^2.0.0",
     "webpack": "^5.72.1"
   },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "mustache": "3"
-      }
-    }
-  },
   "engines": {
     "node": "14.* || >= 16"
   },
