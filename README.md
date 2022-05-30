@@ -1,5 +1,4 @@
-ember-bem-helpers
-==============================================================================
+# ember-bem-helpers
 
 <a href="https://github.com/retailnext/ember-bem-helpers/actions"><img alt="Build Status" src="https://github.com/retailnext/ember-bem-helpers/workflows/CI/badge.svg"></a>
 
@@ -10,30 +9,27 @@ This addon produces BEM classes based on [Two Dashes style](https://en.bem.info/
 No mixins, no code in the component js/ts file needed. Works with template-only components.
 
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
 * Ember.js v3.24 or above
 * Ember CLI v3.24 or above
 * Node.js v12 or above
 
 
-Installation
-------------------------------------------------------------------------------
+## Installation
 
 ```
 ember install ember-bem-helpers
 ```
 
 
-Usage
-------------------------------------------------------------------------------
+## Usage
 
 This addon provides two helpers out of the box: `block-name` and `bem`.
 
 Usually you are supposed to use `block-name` once per component, on the top level of the component. However, nested usage is also supported.
 
-Use `bem` helper everywhere you need to get a BEM class. 
+Use `bem` helper everywhere you need to get a BEM class.
 
 Here is a basic example:
 
@@ -50,8 +46,7 @@ Here is a basic example:
 ```
 
 
-Defining a block outside of the component
-------------------------------------------------------------------------------
+## Defining a block outside of the component
 
 You can pass a variable to the `block-name` helper like this:
 
@@ -59,14 +54,12 @@ You can pass a variable to the `block-name` helper like this:
 {{block-name @externalBlockName}}
 ```
 
-Why not modifier?
-------------------------------------------------------------------------------
+## Why not modifier?
 
 Modifiers are not run in [FastBoot](http://www.ember-fastboot.com/) and you probably want your elements to have proper classes in a server-side rendered HTML.
 
 
-How does it work?
-------------------------------------------------------------------------------
+## How does it work?
 
 This addon provides AST plugin which transforms `block-name` (which is actually not a real helper) to the {{#let}}{{/let}} block with `blockName` variable and injects it as the first argument to every `bem` helper usage.
 
@@ -85,19 +78,16 @@ So, the above basic example is transformed to the following:
 ```
 
 
-Contributing
-------------------------------------------------------------------------------
+## Contributing
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
 
 
-Thanks!
-------------------------------------------------------------------------------
+## Thanks!
 
 This addon is based on the great addon [ember-cli-bem](https://github.com/nikityy/ember-cli-bem) by [Nikita Gusarov](https://github.com/nikityy).
 
 
-License
-------------------------------------------------------------------------------
+## License
 
 This project is licensed under the [MIT License](LICENSE.md).
