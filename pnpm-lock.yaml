@@ -6,7 +6,7 @@ specifiers:
   '@babel/plugin-proposal-decorators': ^7.20.0
   '@ember/optional-features': ^2.0.0
   '@ember/test-helpers': ^2.8.1
-  '@embroider/test-setup': ^1.8.3
+  '@embroider/test-setup': ^2.0.0
   '@glimmer/component': ^1.1.2
   '@glimmer/tracking': ^1.1.2
   broccoli-asset-rev: ^3.0.0
@@ -50,7 +50,7 @@ devDependencies:
   '@babel/plugin-proposal-decorators': 7.20.0_@babel+core@7.19.6
   '@ember/optional-features': 2.0.0
   '@ember/test-helpers': 2.8.1_44zau4gslyki3rcm3qc4yjjvrq
-  '@embroider/test-setup': 1.8.3
+  '@embroider/test-setup': 2.0.0
   '@glimmer/component': 1.1.2_@babel+core@7.19.6
   '@glimmer/tracking': 1.1.2
   broccoli-asset-rev: 3.0.0
@@ -1336,8 +1336,8 @@ packages:
       typescript-memoize: 1.1.1
     dev: true
 
-  /@embroider/test-setup/1.8.3:
-    resolution: {integrity: sha512-BCCbBG7UWkCw+cQ401Ip6LnqTRaQDeKImxR+e7Q4oP6H4EBj7p4iGR1z6fhMy4NNyXKPB6jk3bGa9bTiiNoEAw==}
+  /@embroider/test-setup/2.0.0:
+    resolution: {integrity: sha512-1hZw0Zny4v3hWlsflS5LyVwKySYPSCnqr48F5SKrE3w5jLkpbrKj93P6XonS1Ya8uad9PMEu2j5Lh4dIJ58dWw==}
     engines: {node: 12.* || 14.* || >= 16}
     dependencies:
       lodash: 4.17.21
