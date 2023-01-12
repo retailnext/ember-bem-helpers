@@ -22,7 +22,7 @@ specifiers:
   ember-load-initializers: ^2.1.2
   ember-page-title: ^7.0.0
   ember-qunit: ^6.0.0
-  ember-resolver: ^9.0.0
+  ember-resolver: ^10.0.0
   ember-source: ~4.9.3
   ember-source-channel-url: ^3.0.0
   ember-template-lint: ^5.2.0
@@ -63,7 +63,7 @@ devDependencies:
   ember-load-initializers: 2.1.2_@babel+core@7.20.5
   ember-page-title: 7.0.0
   ember-qunit: 6.0.0_qhusffjocg4cnbdwj4yxijwhva
-  ember-resolver: 9.0.0_ember-source@4.9.3
+  ember-resolver: 10.0.0_ember-source@4.9.3
   ember-source: 4.9.3_vnrh5wqqakkeaioc2xfvwodvoq
   ember-source-channel-url: 3.0.0
   ember-template-lint: 5.2.0_ember-cli-htmlbars@6.1.1
@@ -4442,10 +4442,11 @@ packages:
       - webpack
     dev: true
 
-  /ember-resolver/9.0.0_ember-source@4.9.3:
-    resolution: {integrity: sha512-oC8HzL6XyfnLFZfyMgc1gDif5s1IOKLCGesvRO57tZoA92QzXW8eD8WNVMT9reoJPKRhymTFlWnwBmq7iQE3wg==}
+  /ember-resolver/10.0.0_ember-source@4.9.3:
+    resolution: {integrity: sha512-e99wFJ4ZpleJ6JMEcIk4WEYP4s3nc+9/iNSXtwBHXC8ADJHJTeN3HjnT/eEbFbswdui4FYxIYuK+UCdP09811Q==}
     engines: {node: 14.* || 16.* || >= 18}
     peerDependencies:
+      '@ember/string': ^3.0.1
       ember-source: ^4.8.3
     peerDependenciesMeta:
       ember-source:
