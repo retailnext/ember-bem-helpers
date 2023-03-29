@@ -13,7 +13,7 @@ No mixins, no code in the component js/ts file needed. Works with template-only 
 
 * Ember.js v3.28 or above
 * Ember CLI v3.28 or above
-* Node.js v14 or above
+* Node.js v16 or above
 
 
 ## Installation

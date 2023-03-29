@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  NODE_VERSION: 14
-  PNPM_VERSION: 7
+  NODE_VERSION: 16
+  PNPM_VERSION: 8
 
 jobs:
   test:
