@@ -75,7 +75,7 @@
     "qunit-dom": "^2.0.0",
     "stylelint": "^15.6.1",
     "stylelint-config-standard": "^33.0.0",
-    "stylelint-prettier": "^3.0.0",
+    "stylelint-prettier": "^4.0.0",
     "webpack": "^5.82.0"
   },
   "peerDependencies": {

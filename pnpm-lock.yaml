@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   ember-cli-babel:
     specifier: ^7.26.11
@@ -121,8 +125,8 @@ devDependencies:
     specifier: ^33.0.0
     version: 33.0.0(stylelint@15.6.1)
   stylelint-prettier:
-    specifier: ^3.0.0
-    version: 3.0.0(prettier@2.8.8)(stylelint@15.6.1)
+    specifier: ^4.0.0
+    version: 4.0.0(prettier@2.8.8)(stylelint@15.6.1)
   webpack:
     specifier: ^5.82.0
     version: 5.82.0
@@ -9480,12 +9484,12 @@ packages:
       stylelint-config-recommended: 12.0.0(stylelint@15.6.1)
     dev: true
 
-  /stylelint-prettier@3.0.0(prettier@2.8.8)(stylelint@15.6.1):
-    resolution: {integrity: sha512-kIks1xw6np0zElokMT2kP6ar3S4MBoj6vUtPJuND1pFELMpZxVS/0uHPR4HDAVn0WAD3I5oF0IA3qBFxBpMkLg==}
+  /stylelint-prettier@4.0.0(prettier@2.8.8)(stylelint@15.6.1):
+    resolution: {integrity: sha512-hYlObunQiSzc5XRttNiDyaY1W7ytW/AJtEbaDxy0rr4ioQvko+cjAgSGrRbz0iRB+yc6jiMrUmHcGkvFb+zDqw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
-      prettier: '>=2.0.0'
-      stylelint: '>=14.0.0'
+      prettier: '>=3.0.0'
+      stylelint: '>=15.8.0'
     dependencies:
       prettier: 2.8.8
       prettier-linter-helpers: 1.0.0
