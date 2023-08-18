@@ -117,7 +117,7 @@ module('Integration | Helper | bem', function (hooks) {
     assert.strictEqual(
       this.element.querySelector('.foo')?.classList.length,
       1,
-      'No modifier classes were added'
+      'No modifier classes were added',
     );
   });
 });
