@@ -82,6 +82,12 @@
   "peerDependencies": {
     "ember-source": "^4.0.0"
   },
+  "pnpm": {
+    "overrides": {
+      "babel-plugin-module-resolver": "5.0.0",
+      "package-json": "7.0.0"
+    }
+  },
   "engines": {
     "node": "16.* || >= 18"
   },
