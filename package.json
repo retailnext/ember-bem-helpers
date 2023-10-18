@@ -34,7 +34,7 @@
     "test:ember-try-one": "ember try:one"
   },
   "dependencies": {
-    "@babel/core": "^7.22.20",
+    "@babel/core": "^7.23.2",
     "ember-cli-babel": "^8.0.0",
     "ember-cli-htmlbars": "^6.3.0"
   },
