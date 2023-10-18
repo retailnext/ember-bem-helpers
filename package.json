@@ -83,6 +83,7 @@
   },
   "pnpm": {
     "overrides": {
+      "ansi-html": "0.0.9",
       "babel-plugin-module-resolver": "5.0.0",
       "package-json": "7.0.0"
     }
