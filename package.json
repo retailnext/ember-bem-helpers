@@ -83,6 +83,9 @@
   },
   "pnpm": {
     "overrides": {
+      "@babel/generator": "7.23.6",
+      "@babel/traverse": "7.23.6",
+      "@babel/types": "7.23.6",
       "ansi-html": "0.0.9",
       "babel-plugin-module-resolver": "5.0.0",
       "package-json": "7.0.0"
