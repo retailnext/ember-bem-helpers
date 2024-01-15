@@ -1,0 +1,3 @@
+packages:
+  - 'ember-bem-helpers'
+  - 'test-app'
