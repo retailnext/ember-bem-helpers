@@ -22,7 +22,8 @@ module.exports = (env) => {
 function isBlockName(statement) {
   return (
     statement.type === 'MustacheStatement' &&
-    statement.path.original === 'block-name'
+    (statement.path.original === 'block-name' ||
+      statement.path.original === 'blockName')
   );
 }
 

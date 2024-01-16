@@ -24,6 +24,11 @@ module.exports = {
   },
   rules: {},
   overrides: [
+    {
+      files: ['**/*.gjs'],
+      parser: 'ember-eslint-parser',
+      extends: ['plugin:ember/recommended-gjs'],
+    },
     // node files
     {
       files: [
@@ -49,7 +54,7 @@ module.exports = {
     },
     {
       // test files
-      files: ['tests/**/*-test.{js,ts}'],
+      files: ['tests/**/*-test.{js,gjs}'],
       extends: ['plugin:qunit/recommended'],
     },
   ],

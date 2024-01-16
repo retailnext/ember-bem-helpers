@@ -69,7 +69,8 @@
     "type": "addon",
     "main": "addon-main.cjs",
     "app-js": {
-      "./helpers/bem.js": "./dist/_app_/helpers/bem.js"
+      "./helpers/bem.js": "./dist/_app_/helpers/bem.js",
+      "./helpers/block-name.js": "./dist/_app_/helpers/block-name.js"
     }
   }
 }
