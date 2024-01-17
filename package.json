@@ -1,95 +1,19 @@
 {
-  "name": "ember-bem-helpers",
-  "version": "0.4.0",
-  "description": "BEM helpers for Ember.js applications",
-  "keywords": [
-    "ember-addon",
-    "BEM",
-    "helper"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/retailnext/ember-bem-helpers.git"
   },
   "license": "MIT",
   "author": "RetailNext",
-  "directories": {
-    "lib": "lib",
-    "test": "tests"
-  },
   "scripts": {
-    "build": "ember build --environment=production",
-    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\"",
-    "lint:css": "stylelint \"**/*.css\"",
-    "lint:css:fix": "concurrently \"pnpm:lint:css -- --fix\"",
-    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\"",
-    "lint:hbs": "ember-template-lint .",
-    "lint:hbs:fix": "ember-template-lint . --fix",
-    "lint:js": "eslint . --cache",
-    "lint:js:fix": "eslint . --fix",
-    "start": "ember serve",
-    "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\"",
-    "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each",
-    "test:ember-try-one": "ember try:one"
-  },
-  "dependencies": {
-    "@babel/core": "^7.23.6",
-    "ember-cli-babel": "^8.2.0",
-    "ember-cli-htmlbars": "^6.3.0"
-  },
-  "devDependencies": {
-    "@babel/eslint-parser": "7.23.3",
-    "@babel/plugin-proposal-decorators": "7.23.7",
-    "@ember/optional-features": "2.0.0",
-    "@ember/test-helpers": "3.2.1",
-    "@embroider/test-setup": "3.0.3",
-    "@glimmer/component": "1.1.2",
-    "@glimmer/tracking": "1.1.2",
-    "broccoli-asset-rev": "3.0.0",
-    "concurrently": "8.2.2",
-    "ember-auto-import": "2.7.2",
-    "ember-cli": "5.5.0",
-    "ember-cli-clean-css": "3.0.0",
-    "ember-cli-dependency-checker": "3.3.2",
-    "ember-cli-inject-live-reload": "2.1.0",
-    "ember-cli-sri": "2.1.1",
-    "ember-cli-terser": "4.0.2",
-    "ember-load-initializers": "2.1.2",
-    "ember-page-title": "8.2.0",
-    "ember-qunit": "8.0.2",
-    "ember-resolver": "11.0.1",
-    "ember-source": "5.5.0",
-    "ember-source-channel-url": "3.0.0",
-    "ember-template-lint": "5.13.0",
-    "ember-try": "3.0.0",
-    "eslint": "8.56.0",
-    "eslint-config-prettier": "9.1.0",
-    "eslint-plugin-ember": "12.0.0",
-    "eslint-plugin-n": "16.6.2",
-    "eslint-plugin-prettier": "5.1.3",
-    "eslint-plugin-qunit": "8.0.1",
-    "loader.js": "4.7.0",
-    "prettier": "3.2.4",
-    "qunit": "2.20.0",
-    "qunit-dom": "3.0.0",
-    "stylelint": "16.1.0",
-    "stylelint-config-standard": "36.0.0",
-    "stylelint-prettier": "5.0.0",
-    "webpack": "5.89.0"
-  },
-  "peerDependencies": {
-    "ember-source": "^4.0.0 || ^5.0.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "@babel/generator": "7.23.6",
-      "@babel/traverse": "7.23.6",
-      "@babel/types": "7.23.6",
-      "ansi-html": "0.0.9",
-      "babel-plugin-module-resolver": "5.0.0",
-      "package-json": "7.0.0"
-    }
+    "build": "pnpm --filter ember-bem-helpers build",
+    "lint": "pnpm --filter '*' lint",
+    "prepare": "pnpm build",
+    "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
+    "start:addon": "pnpm --filter ember-bem-helpers start --no-watch.clearScreen",
+    "start:test-app": "pnpm --filter test-app start",
+    "test": "pnpm --filter '*' test",
+    "test:ember": "pnpm --filter '*' test:ember"
   },
   "engines": {
     "node": "18.* || >= 20"
