@@ -3,7 +3,7 @@ import { setupRenderingTest } from 'test-app/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Helper | bem', function (hooks) {
+module('Integration | Helper | bem hbs', function (hooks) {
   setupRenderingTest(hooks);
 
   test('block', async function (assert) {
