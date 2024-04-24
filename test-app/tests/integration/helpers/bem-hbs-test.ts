@@ -1,7 +1,18 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'test-app/tests/helpers';
-import { render } from '@ember/test-helpers';
+import type { TestContext } from '@ember/test-helpers';
+import { find, render, rerender } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
+import { tracked } from '@glimmer/tracking';
+
+class State {
+  @tracked isMod = false;
+  @tracked depth = 0;
+}
+
+interface CurrentTestContext extends TestContext {
+  state: State;
+}
 
 module('Integration | Helper | bem hbs', function (hooks) {
   setupRenderingTest(hooks);
@@ -9,37 +20,43 @@ module('Integration | Helper | bem hbs', function (hooks) {
   test('block', async function (assert) {
     await render(hbs`
       {{block-name "foo"}}
-      <div class={{bem}}></div>
+      <div class={{(bem)}}></div>
     `);
 
     assert.dom('.foo').exists('Block class is correct');
   });
 
-  test('block with modifiers', async function (assert) {
-    this.set('isMod', false);
+  test('block with modifiers', async function (this: CurrentTestContext, assert) {
+    this.state = new State();
 
-    await render(hbs`
+    await render<CurrentTestContext>(hbs`
       {{block-name "foo"}}
-      <div class={{bem mod=this.isMod}}></div>
+      {{#let this.state.isMod as |modValue|}}
+        <div class={{bem mod=modValue}}></div>
+      {{/let}}
     `);
 
     assert.dom('.foo').doesNotHaveClass('foo--mod', 'No mod class added');
 
-    this.set('isMod', true);
+    this.state.isMod = true;
+    await rerender();
+
     assert.dom('.foo').hasClass('foo--mod', 'Mod class added');
   });
 
-  test('sub-expression', async function (assert) {
-    this.set('isMod', false);
+  test('sub-expression', async function (this: CurrentTestContext, assert) {
+    this.state = new State();
 
-    await render(hbs`
+    await render<CurrentTestContext>(hbs`
       {{block-name "foo"}}
-      <div class={{concat (bem mod=this.isMod) " baz"}}></div>
+      <div class={{concat (bem mod=this.state.isMod) " baz"}}></div>
     `);
 
     assert.dom('.foo').doesNotHaveClass('foo--mod', 'No mod class added');
 
-    this.set('isMod', true);
+    this.state.isMod = true;
+    await rerender();
+
     assert.dom('.foo').hasClass('foo--mod', 'Mod class added');
     assert.dom('.foo').hasClass('baz', 'Concatenated class is there');
   });
@@ -53,19 +70,20 @@ module('Integration | Helper | bem hbs', function (hooks) {
     assert.dom('.foo__bar').exists('Block class is correct');
   });
 
-  test('elem with modifiers', async function (assert) {
-    this.set('isMod', false);
+  test('elem with modifiers', async function (this: CurrentTestContext, assert) {
+    this.state = new State();
 
-    await render(hbs`
+    await render<CurrentTestContext>(hbs`
       {{block-name "foo"}}
-      <div class={{bem "bar" mod=this.isMod}}></div>
+      <div class={{bem "bar" mod=this.state.isMod}}></div>
     `);
 
     assert
       .dom('.foo__bar')
       .doesNotHaveClass('foo__bar--mod', 'No mod class added');
 
-    this.set('isMod', true);
+    this.state.isMod = true;
+    await rerender();
     assert.dom('.foo__bar').hasClass('foo__bar--mod', 'Mod class added');
   });
 
@@ -80,18 +98,21 @@ module('Integration | Helper | bem hbs', function (hooks) {
     assert.dom('.foo__bar').hasClass('foo__bar--small', 'Small class added');
   });
 
-  test('elem with non-boolean value', async function (assert) {
-    this.set('depth', 0);
-    await render(hbs`
+  test('elem with non-boolean value', async function (this: CurrentTestContext, assert) {
+    this.state = new State();
+
+    await render<CurrentTestContext>(hbs`
       {{block-name "foo"}}
-      <div class={{bem "bar" depth=this.depth}}></div>
+      <div class={{bem "bar" depth=this.state.depth}}></div>
     `);
 
     assert
       .dom('.foo__bar')
       .hasClass('foo__bar--depth-0', 'non-boolean modifier applied');
 
-    this.set('depth', 4);
+    this.state.depth = 4;
+    await rerender();
+
     assert
       .dom('.foo__bar')
       .hasClass('foo__bar--depth-4', 'non-boolean modifier updated');
@@ -101,7 +122,7 @@ module('Integration | Helper | bem hbs', function (hooks) {
     await render(hbs`
       {{#let "foo" as |blockName|}}
         {{block-name blockName}}
-        <div class={{bem}}></div>
+        <div class={{(bem)}}></div>
       {{/let}}`);
 
     assert.dom('.foo').exists('Block class is correct');
@@ -111,11 +132,11 @@ module('Integration | Helper | bem hbs', function (hooks) {
     await render(hbs`
       {{#let "foo" as |blockName|}}
         {{block-name blockName}}
-        <div class={{bem mod=@modValue}}></div>
+        <div class={{bem mod=undefined}}></div>
       {{/let}}`);
 
     assert.strictEqual(
-      this.element.querySelector('.foo')?.classList.length,
+      find('.foo')?.classList.length,
       1,
       'No modifier classes were added',
     );
