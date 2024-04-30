@@ -1,6 +1,6 @@
 {
   "name": "ember-bem-helpers",
-  "version": "0.4.0",
+  "version": "1.0.0",
   "description": "BEM helpers for Ember.js applications",
   "keywords": [
     "ember-addon",
@@ -33,9 +33,9 @@
   },
   "files": [
     "addon-main.cjs",
-    "src/**/*.js",
     "declarations",
-    "dist"
+    "dist",
+    "lib"
   ],
   "scripts": {
     "build": "rollup --config",
