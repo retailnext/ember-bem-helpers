@@ -31,9 +31,9 @@
     "overrides": {
       "ansi-html": "0.0.9",
       "babel-plugin-module-resolver": "5.0.0",
+      "ember-eslint-parser": "0.4.2",
       "package-json": "7.0.0"
     }
   },
-  "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
-  "main": "index.js"
+  "homepage": "https://github.com/retailnext/ember-bem-helpers#readme"
 }

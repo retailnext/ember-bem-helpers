@@ -14,9 +14,22 @@
   "license": "MIT",
   "author": "RetailNext",
   "exports": {
-    ".": "./dist/index.js",
-    "./*": "./dist/*.js",
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./declarations/*.d.ts",
+      "default": "./dist/*.js"
+    },
     "./addon-main.js": "./addon-main.cjs"
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "declarations/*"
+      ]
+    }
   },
   "files": [
     "addon-main.cjs",
@@ -45,9 +58,11 @@
     "@babel/eslint-parser": "7.24.1",
     "@babel/runtime": "7.24.4",
     "@embroider/addon-dev": "4.3.1",
+    "@glint/environment-ember-loose": "1.4.0",
     "@rollup/plugin-babel": "6.0.4",
     "babel-plugin-ember-template-compilation": "2.2.2",
     "concurrently": "8.2.2",
+    "ember-source": "4.12.0",
     "ember-template-lint": "6.0.0",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
@@ -57,6 +72,9 @@
     "prettier": "3.2.5",
     "rollup": "4.16.4",
     "rollup-plugin-copy": "3.5.0"
+  },
+  "peerDependencies": {
+    "ember-source": ">=3.28.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"

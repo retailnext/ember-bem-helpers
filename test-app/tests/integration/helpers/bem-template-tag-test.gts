@@ -4,6 +4,7 @@ import { render, rerender } from '@ember/test-helpers';
 import { bem, blockName } from 'ember-bem-helpers';
 import { concat } from '@ember/helper';
 import { tracked } from '@glimmer/tracking';
+import { find } from '@ember/test-helpers';
 
 module('Integration | Helper | bem template tag', function (hooks) {
   setupRenderingTest(hooks);
@@ -17,7 +18,7 @@ module('Integration | Helper | bem template tag', function (hooks) {
     await render(
       <template>
         {{blockName 'foo'}}
-        <div class={{bem}}></div>
+        <div class={{(bem)}}></div>
       </template>,
     );
 
@@ -128,7 +129,7 @@ module('Integration | Helper | bem template tag', function (hooks) {
       <template>
         {{#let 'foo' as |_blockName|}}
           {{blockName _blockName}}
-          <div class={{bem}}></div>
+          <div class={{(bem)}}></div>
         {{/let}}
       </template>,
     );
@@ -141,13 +142,13 @@ module('Integration | Helper | bem template tag', function (hooks) {
       <template>
         {{#let 'foo' as |_blockName|}}
           {{blockName _blockName}}
-          <div class={{bem mod=@modValue}}></div>
+          <div class={{bem mod=undefined}}></div>
         {{/let}}
       </template>,
     );
 
     assert.strictEqual(
-      this.element.querySelector('.foo')?.classList.length,
+      find('.foo')?.classList.length,
       1,
       'No modifier classes were added',
     );
