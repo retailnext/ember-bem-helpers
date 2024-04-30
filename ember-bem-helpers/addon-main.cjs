@@ -1,7 +1,7 @@
 'use strict';
 
 const { addonV1Shim } = require('@embroider/addon-shim');
-const BemAstTransform = require('./src/lib/bem-ast-transform.js');
+const BemAstTransform = require('./lib/bem-ast-transform.cjs');
 const extracted = addonV1Shim(__dirname);
 
 extracted.setupPreprocessorRegistry = function (type, registry) {

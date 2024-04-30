@@ -33,9 +33,9 @@
   },
   "files": [
     "addon-main.cjs",
-    "src/**/*.js",
     "declarations",
-    "dist"
+    "dist",
+    "lib"
   ],
   "scripts": {
     "build": "rollup --config",
