@@ -67,10 +67,10 @@ importers:
         version: 17.7.0(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: 5.1.3
-        version: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)
+        version: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.0)
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.0
+        version: 3.3.0
       rollup:
         specifier: 4.18.0
         version: 4.18.0
@@ -220,7 +220,7 @@ importers:
         version: 17.7.0(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: 5.1.3
-        version: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5)
+        version: 5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.0)
       eslint-plugin-qunit:
         specifier: 8.1.1
         version: 8.1.1(eslint@8.57.0)
@@ -228,11 +228,11 @@ importers:
         specifier: 4.7.0
         version: 4.7.0
       prettier:
-        specifier: 3.2.5
-        version: 3.2.5
+        specifier: 3.3.0
+        version: 3.3.0
       prettier-plugin-ember-template-tag:
         specifier: 2.0.2
-        version: 2.0.2(prettier@3.2.5)
+        version: 2.0.2(prettier@3.3.0)
       qunit:
         specifier: 2.21.0
         version: 2.21.0
@@ -4985,8 +4985,8 @@ packages:
     engines: {node: '>=10.13.0'}
     hasBin: true
 
-  prettier@3.2.5:
-    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+  prettier@3.3.0:
+    resolution: {integrity: sha512-J9odKxERhCQ10OC2yb93583f6UnYutOeiV5i0zEDS7UGTdUt0u+y8erxl3lBKvwo/JHyyoEdXjwp4dke9oyZ/g==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -10235,10 +10235,10 @@ snapshots:
       minimatch: 9.0.4
       semver: 7.6.0
 
-  eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.2.5):
+  eslint-plugin-prettier@5.1.3(@types/eslint@8.56.10)(eslint-config-prettier@9.1.0(eslint@8.57.0))(eslint@8.57.0)(prettier@3.3.0):
     dependencies:
       eslint: 8.57.0
-      prettier: 3.2.5
+      prettier: 3.3.0
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
     optionalDependencies:
@@ -12217,17 +12217,17 @@ snapshots:
     dependencies:
       fast-diff: 1.3.0
 
-  prettier-plugin-ember-template-tag@2.0.2(prettier@3.2.5):
+  prettier-plugin-ember-template-tag@2.0.2(prettier@3.3.0):
     dependencies:
       '@babel/core': 7.24.6
       content-tag: 1.2.2
-      prettier: 3.2.5
+      prettier: 3.3.0
     transitivePeerDependencies:
       - supports-color
 
   prettier@2.8.8: {}
 
-  prettier@3.2.5: {}
+  prettier@3.3.0: {}
 
   pretty-ms@3.2.0:
     dependencies:
