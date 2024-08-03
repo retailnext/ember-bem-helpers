@@ -70,7 +70,7 @@
     "eslint-plugin-n": "17.9.0",
     "eslint-plugin-prettier": "5.2.1",
     "prettier": "3.3.3",
-    "rollup": "4.19.1",
+    "rollup": "4.20.0",
     "rollup-plugin-copy": "3.5.0"
   },
   "peerDependencies": {
