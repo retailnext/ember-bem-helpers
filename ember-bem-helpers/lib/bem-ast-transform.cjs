@@ -6,7 +6,10 @@ module.exports = (env) => {
   return {
     name: 'ember-bem-helpers',
     visitor: {
-      Program(node) {
+      Template(node) {
+        blockify(node.body, builders);
+      },
+      Block(node) {
         blockify(node.body, builders);
       },
       MustacheStatement(node) {
@@ -49,7 +52,7 @@ function blockify(statements, builders) {
         builders.path('let'),
         [blockName],
         null,
-        builders.program(trailingStatements, ['blockName']),
+        builders.blockItself(trailingStatements, ['blockName']),
       );
     }
   }
