@@ -31,7 +31,7 @@
     "overrides": {
       "ansi-html": "0.0.9",
       "babel-plugin-module-resolver": "5.0.2",
-      "ember-eslint-parser": "0.5.0",
+      "ember-eslint-parser": "0.5.1",
       "package-json": "10.0.1"
     }
   },
