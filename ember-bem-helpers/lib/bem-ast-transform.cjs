@@ -31,7 +31,11 @@ function isBlockName(statement) {
 }
 
 function isBem(statement) {
-  return statement.path.original === 'bem';
+  return (
+    (statement.type === 'MustacheStatement' ||
+      statement.type === 'SubExpression') &&
+    statement.path.original === 'bem'
+  );
 }
 
 function extractBlockName(statement) {
