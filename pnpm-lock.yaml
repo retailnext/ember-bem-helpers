@@ -7,7 +7,7 @@ settings:
 overrides:
   ansi-html: 0.0.9
   babel-plugin-module-resolver: 5.0.2
-  cookie: 1.0.0
+  cookie: 1.0.1
   ember-eslint-parser: 0.5.2
   find-yarn-workspace-root: 2.0.0
   package-json: 10.0.1
@@ -2414,8 +2414,8 @@ packages:
   cookie-signature@1.0.6:
     resolution: {integrity: sha512-QADzlaHc8icV8I7vbaJXJwod9HWYp8uCqf1xa4OfNu1T7JVxQIrUgOWtHdNDtPiywmFbiS12VjotIXLrKM3orQ==}
 
-  cookie@1.0.0:
-    resolution: {integrity: sha512-bsSztFoaR8bw9MlFCrTHzc1wOKCUKOBsbgFdoDilZDkETAOOjKSqV7L+EQLbTaylwvZasd9vM4MGKotJaUfSpA==}
+  cookie@1.0.1:
+    resolution: {integrity: sha512-Xd8lFX4LM9QEEwxQpF9J9NTUh8pmdJO0cyRJhFiDoLTk2eH8FXlRv2IFGYVadZpqI3j8fhNrSdKCeYPxiAhLXw==}
     engines: {node: '>=18'}
 
   copy-dereference@1.0.0:
@@ -8254,7 +8254,7 @@ snapshots:
 
   cookie-signature@1.0.6: {}
 
-  cookie@1.0.0: {}
+  cookie@1.0.1: {}
 
   copy-dereference@1.0.0: {}
 
@@ -9059,7 +9059,7 @@ snapshots:
       '@types/node': 22.7.4
       accepts: 1.3.8
       base64id: 2.0.0
-      cookie: 1.0.0
+      cookie: 1.0.1
       cors: 2.8.5
       debug: 4.3.7
       engine.io-parser: 5.2.3
@@ -9393,7 +9393,7 @@ snapshots:
       body-parser: 1.20.3
       content-disposition: 0.5.4
       content-type: 1.0.5
-      cookie: 1.0.0
+      cookie: 1.0.1
       cookie-signature: 1.0.6
       debug: 2.6.9
       depd: 2.0.0
