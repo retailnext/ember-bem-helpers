@@ -159,8 +159,8 @@ importers:
         specifier: 8.2.0
         version: 8.2.0(@babel/core@7.26.0)
       ember-cli-dependency-checker:
-        specifier: 3.3.2
-        version: 3.3.2(ember-cli@5.12.0(handlebars@4.7.8)(underscore@1.13.7))
+        specifier: 3.3.3
+        version: 3.3.3(ember-cli@5.12.0(handlebars@4.7.8)(underscore@1.13.7))
       ember-cli-htmlbars:
         specifier: 6.3.0
         version: 6.3.0
@@ -2702,8 +2702,8 @@ packages:
     peerDependencies:
       '@babel/core': ^7.12.0
 
-  ember-cli-dependency-checker@3.3.2:
-    resolution: {integrity: sha512-PwkrW5oYsdPWwt+0Tojufmv/hxVETTjkrEdK7ANQB2VSnqpA5UcYubwpQM9ONuR2J8wyNDMwEHlqIrk/FYtBsQ==}
+  ember-cli-dependency-checker@3.3.3:
+    resolution: {integrity: sha512-mvp+HrE0M5Zhc2oW8cqs8wdhtqq0CfQXAYzaIstOzHJJn/U01NZEGu3hz7J7zl/+jxZkyygylzcS57QqmPXMuQ==}
     engines: {node: '>= 6'}
     peerDependencies:
       ember-cli: ^3.2.0 || >=4.0.0
@@ -8718,7 +8718,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-cli-dependency-checker@3.3.2(ember-cli@5.12.0(handlebars@4.7.8)(underscore@1.13.7)):
+  ember-cli-dependency-checker@3.3.3(ember-cli@5.12.0(handlebars@4.7.8)(underscore@1.13.7)):
     dependencies:
       chalk: 2.4.2
       ember-cli: 5.12.0(handlebars@4.7.8)(underscore@1.13.7)
