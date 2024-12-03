@@ -32,7 +32,7 @@
       "ansi-html": "0.0.9",
       "babel-plugin-module-resolver": "5.0.2",
       "cookie": "1.0.2",
-      "ember-eslint-parser": "0.5.3",
+      "ember-eslint-parser": "0.5.7",
       "find-yarn-workspace-root": "2.0.0",
       "package-json": "10.0.1",
       "sane": "5.0.1"
