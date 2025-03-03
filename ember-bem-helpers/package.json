@@ -71,7 +71,7 @@
     "eslint-plugin-n": "17.15.1",
     "eslint-plugin-prettier": "5.2.3",
     "globals": "16.0.0",
-    "prettier": "3.5.2",
+    "prettier": "3.5.3",
     "rollup": "4.34.8",
     "rollup-plugin-copy": "3.5.0"
   },
