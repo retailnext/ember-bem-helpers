@@ -21,9 +21,9 @@
     "lint:js:fix": "eslint . --fix",
     "lint:types": "glint",
     "start": "ember serve",
-    "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\"",
+    "test": "concurrently \"pnpm:lint\" \"pnpm:test:ember\" --names \"lint,test:ember\"",
     "test:ember": "ember test",
-    "test:embers": "ember test -s",
+    "test:watch": "ember test -s",
     "test:ember-compatibility": "ember try:each",
     "test:ember-try-one": "ember try:one"
   },
