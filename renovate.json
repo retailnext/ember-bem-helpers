@@ -1,18 +1,7 @@
 {
   "extends": [
     "config:recommended",
-    ":preserveSemverRanges"
-  ],
-  "packageRules": [
-    {
-      "matchUpdateTypes": [
-        "minor",
-        "patch",
-        "pin",
-        "digest",
-        "lockFileMaintenance"
-      ],
-      "automerge": true
-    }
+    ":preserveSemverRanges",
+    ":automergeMinor"
   ]
 }
