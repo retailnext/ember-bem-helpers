@@ -57,7 +57,7 @@
     "@babel/core": "7.26.10",
     "@babel/eslint-parser": "7.26.10",
     "@babel/runtime": "7.26.10",
-    "@embroider/addon-dev": "7.1.3",
+    "@embroider/addon-dev": "7.1.4",
     "@eslint/js": "9.23.0",
     "@glint/environment-ember-loose": "1.5.2",
     "@rollup/plugin-babel": "6.0.4",
