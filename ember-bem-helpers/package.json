@@ -72,7 +72,7 @@
     "eslint-plugin-prettier": "5.4.1",
     "globals": "16.2.0",
     "prettier": "3.5.3",
-    "rollup": "4.42.0",
+    "rollup": "4.43.0",
     "rollup-plugin-copy": "3.5.0"
   },
   "peerDependencies": {
