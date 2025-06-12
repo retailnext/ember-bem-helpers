@@ -33,7 +33,9 @@
       "babel-plugin-module-resolver": "5.0.2",
       "cookie": "1.0.2",
       "package-json": "10.0.1",
-      "sane": "5.0.1"
+      "sane": "5.0.1",
+      "brace-expansion@<1.1.12": "^1.1.12",
+      "brace-expansion@>=2.0.0 <2.0.2": "^2.0.2"
     }
   },
   "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
