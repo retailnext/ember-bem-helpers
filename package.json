@@ -35,7 +35,7 @@
       "package-json": "10.0.1",
       "sane": "5.0.1",
       "brace-expansion@<1.1.12": "^1.1.12",
-      "brace-expansion@>=2.0.0 <2.0.2": "^2.0.2"
+      "brace-expansion@>=2.0.0 <2.0.2": "^4.0.0"
     }
   },
   "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
