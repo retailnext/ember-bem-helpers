@@ -11,7 +11,7 @@ No mixins, no code in the component js/ts file needed. Works with template-only 
 
 ## Compatibility
 
-- Ember.js v4.8 or above
+- Ember.js v5.8 or above
 - Embroider or ember-auto-import v2
 
 ## Installation
