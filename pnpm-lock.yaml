@@ -175,8 +175,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       ember-eslint-parser:
-        specifier: 0.5.9
-        version: 0.5.9(@babel/core@7.28.0)(@typescript-eslint/parser@8.38.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)
+        specifier: 0.5.10
+        version: 0.5.10(@babel/core@7.28.0)(@typescript-eslint/parser@8.38.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0)
       ember-load-initializers:
         specifier: 3.0.1
         version: 3.0.1(ember-source@6.6.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -2664,6 +2664,16 @@ packages:
     resolution: {integrity: sha512-2qNqaD3iIFeFcYiKsgrsP0qdEilvT820+vX2Fz1x32XIgcsmy79ufc0rHrsHmEiazSQLC9XKUskwEzFBWjy54g==}
     engines: {node: '>= 18'}
     hasBin: true
+
+  ember-eslint-parser@0.5.10:
+    resolution: {integrity: sha512-QOmqeY53LIMc3/FgMnvt/KY/JhtyOZchda+VLJe994muhsS76EQ1lJaqv6lntq9Pc2R8coqiBKVfqlD0DeqnGg==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@babel/core': ^7.23.6
+      '@typescript-eslint/parser': '*'
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
 
   ember-eslint-parser@0.5.9:
     resolution: {integrity: sha512-IW4/3cEiFp49M2LiKyzi7VcT1egogOe8UxQ9eUKTooenC7Q4qNhzTD6rOZ8j51m8iJC+8hCzjbNCa3K4CN0Hhg==}
@@ -8700,6 +8710,21 @@ snapshots:
       - velocityjs
       - walrus
       - whiskers
+
+  ember-eslint-parser@0.5.10(@babel/core@7.28.0)(@typescript-eslint/parser@8.38.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0):
+    dependencies:
+      '@babel/core': 7.28.0
+      '@babel/eslint-parser': 7.28.0(@babel/core@7.28.0)(eslint@9.31.0)
+      '@glimmer/syntax': 0.94.9
+      content-tag: 2.0.3
+      eslint-scope: 7.2.2
+      html-tags: 3.3.1
+      mathml-tag-names: 2.1.3
+      svg-tags: 1.0.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.38.0(eslint@9.31.0)(typescript@5.8.3)
+    transitivePeerDependencies:
+      - eslint
 
   ember-eslint-parser@0.5.9(@babel/core@7.28.0)(@typescript-eslint/parser@8.38.0(eslint@9.31.0)(typescript@5.8.3))(eslint@9.31.0):
     dependencies:
