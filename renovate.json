@@ -3,5 +3,9 @@
     "config:recommended",
     ":preserveSemverRanges",
     ":automergeMinor"
+  ],
+  "labels": [
+    "dependencies",
+    "ui"
   ]
 }
