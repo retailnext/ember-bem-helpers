@@ -146,8 +146,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1
       ember-auto-import:
-        specifier: 2.10.0
-        version: 2.10.0(@glint/template@1.5.2)(webpack@5.101.3)
+        specifier: 2.10.1
+        version: 2.10.1(@glint/template@1.5.2)(webpack@5.101.3)
       ember-bem-helpers:
         specifier: workspace:*
         version: link:../ember-bem-helpers
@@ -2609,8 +2609,8 @@ packages:
   electron-to-chromium@1.5.188:
     resolution: {integrity: sha512-pfEx5CBFAocOKNrc+i5fSvhDaI1Vr9R9aT5uX1IzM3hhdL6k649wfuUcdUd9EZnmbE1xdfA51CwqQ61CO3Xl3g==}
 
-  ember-auto-import@2.10.0:
-    resolution: {integrity: sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==}
+  ember-auto-import@2.10.1:
+    resolution: {integrity: sha512-5K4lYSEBch3DKQn1VElFHDHcHTvhTJnB6aebf24VyIobLL+OMWORcCK1fiwyfPiVABztyuLXH2GiXDweNUtntA==}
     engines: {node: 12.* || 14.* || >= 16}
 
   ember-cli-app-version@7.0.0:
@@ -5709,7 +5709,7 @@ snapshots:
       '@babel/core': 7.28.4
       '@babel/helper-annotate-as-pure': 7.27.3
       '@babel/helper-wrap-function': 7.27.1
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5738,8 +5738,8 @@ snapshots:
   '@babel/helper-wrap-function@7.27.1':
     dependencies:
       '@babel/template': 7.27.2
-      '@babel/traverse': 7.28.3
-      '@babel/types': 7.28.2
+      '@babel/traverse': 7.28.4
+      '@babel/types': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5760,7 +5760,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.4
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5787,7 +5787,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.4
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5871,7 +5871,7 @@ snapshots:
       '@babel/core': 7.28.4
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-remap-async-to-generator': 7.27.1(@babel/core@7.28.4)
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5918,7 +5918,7 @@ snapshots:
       '@babel/helper-globals': 7.28.0
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-replace-supers': 7.27.1(@babel/core@7.28.4)
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5932,7 +5932,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.4
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -5989,7 +5989,7 @@ snapshots:
       '@babel/core': 7.28.4
       '@babel/helper-compilation-targets': 7.27.2
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -6035,7 +6035,7 @@ snapshots:
       '@babel/helper-module-transforms': 7.28.3(@babel/core@7.28.4)
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -6075,7 +6075,7 @@ snapshots:
       '@babel/helper-plugin-utils': 7.27.1
       '@babel/plugin-transform-destructuring': 7.28.0(@babel/core@7.28.4)
       '@babel/plugin-transform-parameters': 7.27.7(@babel/core@7.28.4)
-      '@babel/traverse': 7.28.3
+      '@babel/traverse': 7.28.4
     transitivePeerDependencies:
       - supports-color
 
@@ -6302,7 +6302,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.28.4
       '@babel/helper-plugin-utils': 7.27.1
-      '@babel/types': 7.28.2
+      '@babel/types': 7.28.4
       esutils: 2.0.3
 
   '@babel/runtime@7.12.18':
@@ -8406,7 +8406,7 @@ snapshots:
 
   electron-to-chromium@1.5.188: {}
 
-  ember-auto-import@2.10.0(@glint/template@1.5.2)(webpack@5.101.3):
+  ember-auto-import@2.10.1(@glint/template@1.5.2)(webpack@5.101.3):
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.28.4)
