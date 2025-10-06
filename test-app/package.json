@@ -81,7 +81,7 @@
     "qunit": "2.24.1",
     "qunit-dom": "3.5.0",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.45.0",
+    "typescript-eslint": "8.46.0",
     "webpack": "5.102.0"
   },
   "engines": {
