@@ -131,8 +131,8 @@ importers:
         specifier: 1.7.2
         version: 1.7.2
       '@tsconfig/ember':
-        specifier: 3.0.11
-        version: 3.0.11
+        specifier: 3.0.12
+        version: 3.0.12
       '@types/qunit':
         specifier: 2.19.13
         version: 2.19.13
@@ -1391,8 +1391,8 @@ packages:
   '@socket.io/component-emitter@3.1.2':
     resolution: {integrity: sha512-9BCxFwvbGg/RsZK9tjXd8s4UcwR0MWeFQ1XEKIQVVvAGJyINdrqKMcTRyLoK8Rse1GjzLV9cwjWV1olXRWEXVA==}
 
-  '@tsconfig/ember@3.0.11':
-    resolution: {integrity: sha512-c9uaKBN4KxtdT/UNPPxoWghyoDsTRHzYb53Z5Fv9eum+4cok0U+hYwyKNjvCxkBjEPECS8QAyp8nGAhRifZnBQ==}
+  '@tsconfig/ember@3.0.12':
+    resolution: {integrity: sha512-ypFTXqIzQAB5HpYPi4TwDElDcUheWrKsEaYXgjiCAvsH6zxcQ4zUeuJqmfT+FoUlHTPZ3Xyel81OxrcjI+rilw==}
 
   '@types/body-parser@1.19.6':
     resolution: {integrity: sha512-HLFeCYgz89uk22N5Qg3dvGvsv46B8GLvKKo1zKG4NybA8U2DiEO3w9lqGg29t/tfLRJpJ6iQxnVw4OnB7MoM9g==}
@@ -7053,7 +7053,7 @@ snapshots:
 
   '@socket.io/component-emitter@3.1.2': {}
 
-  '@tsconfig/ember@3.0.11': {}
+  '@tsconfig/ember@3.0.12': {}
 
   '@types/body-parser@1.19.6':
     dependencies:
