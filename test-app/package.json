@@ -82,7 +82,7 @@
     "qunit-dom": "3.5.0",
     "typescript": "5.9.3",
     "typescript-eslint": "8.50.0",
-    "webpack": "5.104.0"
+    "webpack": "5.104.1"
   },
   "engines": {
     "node": ">= 20"
