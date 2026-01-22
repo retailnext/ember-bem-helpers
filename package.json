@@ -33,7 +33,6 @@
       "babel-plugin-module-resolver": "5.0.2",
       "cookie": "1.1.1",
       "package-json": "10.0.1",
-      "sane": "5.0.1",
       "tmp": ">=0.2.4",
       "diff@<8.0.3": ">=8.0.3"
     }
