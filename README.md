@@ -21,6 +21,33 @@ ember install ember-bem-helpers
 ```
 
 
+## Configuration for V2 Addons
+
+If you're using this addon **within a V2 addon** (not a classic Ember app), you need to manually configure the AST transform in your addon's `babel.publish.config.cjs` and/or `babel.config.cjs`:
+
+```js
+module.exports = {
+  plugins: [
+    [
+      'babel-plugin-ember-template-compilation',
+      {
+        targetFormat: 'hbs',
+        transforms: [
+          'ember-bem-helpers/ast-transform',
+          // ... other transforms
+        ],
+      },
+    ],
+    // ... other plugins
+  ]
+}
+```
+
+This is necessary because v2 addons are pre-built, so the AST transformation needs to happen during the addon's own build process, not in the consuming app.
+
+**Note:** Classic Ember apps and Embroider apps automatically get the AST transform via the `addon-main.cjs` shim and don't need this configuration.
+
+
 ## Usage
 
 This addon provides two helpers out of the box: `block-name` and `bem`.
