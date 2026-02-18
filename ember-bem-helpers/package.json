@@ -1,6 +1,6 @@
 {
   "name": "ember-bem-helpers",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "BEM helpers for Ember.js applications",
   "keywords": [
     "ember-addon",
@@ -22,7 +22,8 @@
       "types": "./declarations/*.d.ts",
       "default": "./dist/*.js"
     },
-    "./addon-main.js": "./addon-main.cjs"
+    "./addon-main.js": "./addon-main.cjs",
+    "./ast-transform": "./lib/bem-ast-transform.cjs"
   },
   "typesVersions": {
     "*": {
