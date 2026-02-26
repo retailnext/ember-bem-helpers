@@ -146,8 +146,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1
       ember-auto-import:
-        specifier: 2.12.0
-        version: 2.12.0(@glint/template@1.7.4)(webpack@5.105.3)
+        specifier: 2.12.1
+        version: 2.12.1(@glint/template@1.7.4)(webpack@5.105.3)
       ember-bem-helpers:
         specifier: workspace:*
         version: link:../ember-bem-helpers
@@ -2805,8 +2805,8 @@ packages:
   electron-to-chromium@1.5.267:
     resolution: {integrity: sha512-0Drusm6MVRXSOJpGbaSVgcQsuB4hEkMpHXaVstcPmhu5LIedxs1xNK/nIxmQIU/RPC0+1/o0AVZfBTkTNJOdUw==}
 
-  ember-auto-import@2.12.0:
-    resolution: {integrity: sha512-J9wVTddnpx1ZPf6CgtMs8byp5t9ZZITUX9v+H+PgSDSgbYbDrVlKr2RGDfJLrnaTpuWwZqh1b54/9jLaERr6QA==}
+  ember-auto-import@2.12.1:
+    resolution: {integrity: sha512-wyvl+aJJKOKbRSLqq6CyMsNrvurmX4SIWHHqZdC5giZ7P8ECGmcn9W9HFoVLpwXkFJoXhNV4L7mqqcU6881t0w==}
     engines: {node: 12.* || 14.* || >= 16}
 
   ember-cli-app-version@7.0.0:
@@ -6817,7 +6817,7 @@ snapshots:
 
   '@ember/test-helpers@5.4.1(@babel/core@7.29.0)(@glint/template@1.7.4)':
     dependencies:
-      '@ember/test-waiters': 4.1.1(@glint/template@1.7.4)
+      '@ember/test-waiters': 4.1.1(@babel/core@7.29.0)(@glint/template@1.7.4)
       '@embroider/addon-shim': 1.10.2
       '@embroider/macros': 1.19.6(@glint/template@1.7.4)
       '@simple-dom/interface': 1.4.0
@@ -6828,11 +6828,12 @@ snapshots:
       - '@glint/template'
       - supports-color
 
-  '@ember/test-waiters@4.1.1(@glint/template@1.7.4)':
+  '@ember/test-waiters@4.1.1(@babel/core@7.29.0)(@glint/template@1.7.4)':
     dependencies:
       '@embroider/addon-shim': 1.10.2
-      '@embroider/macros': 1.19.6(@glint/template@1.7.4)
+      '@embroider/macros': 1.19.7(@babel/core@7.29.0)(@glint/template@1.7.4)
     transitivePeerDependencies:
+      - '@babel/core'
       - '@glint/template'
       - supports-color
 
@@ -7574,7 +7575,7 @@ snapshots:
 
   '@types/minimatch@6.0.0':
     dependencies:
-      minimatch: 3.1.5
+      minimatch: 10.2.2
 
   '@types/node@25.0.3':
     dependencies:
@@ -8922,7 +8923,7 @@ snapshots:
 
   electron-to-chromium@1.5.267: {}
 
-  ember-auto-import@2.12.0(@glint/template@1.7.4)(webpack@5.105.3):
+  ember-auto-import@2.12.1(@glint/template@1.7.4)(webpack@5.105.3):
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.29.0)
@@ -8930,7 +8931,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.29.0)
       '@babel/plugin-transform-class-static-block': 7.28.3(@babel/core@7.29.0)
       '@babel/preset-env': 7.28.5(@babel/core@7.29.0)
-      '@embroider/macros': 1.19.6(@glint/template@1.7.4)
+      '@embroider/macros': 1.19.7(@babel/core@7.29.0)(@glint/template@1.7.4)
       '@embroider/reverse-exports': 0.2.0
       '@embroider/shared-internals': 2.9.2
       babel-loader: 8.4.1(@babel/core@7.29.0)(webpack@5.105.3)
