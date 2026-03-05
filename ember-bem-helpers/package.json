@@ -61,7 +61,7 @@
     "@embroider/addon-dev": "8.3.0",
     "@eslint/js": "9.39.3",
     "@glint/environment-ember-loose": "1.5.2",
-    "@rollup/plugin-babel": "6.1.0",
+    "@rollup/plugin-babel": "7.0.0",
     "babel-plugin-ember-template-compilation": "4.0.0",
     "concurrently": "9.2.1",
     "ember-source": "6.11.0",
