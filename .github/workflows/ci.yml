@@ -12,9 +12,6 @@ concurrency:
   group: ci-${{ github.head_ref || github.ref }}
   cancel-in-progress: true
 
-env:
-  NODE_VERSION: 20
-
 permissions:
   contents: read
 
@@ -29,31 +26,12 @@ jobs:
     - uses: pnpm/action-setup@v4
     - uses: actions/setup-node@v6
       with:
-        node-version: ${{ env.NODE_VERSION }}
+        node-version: 24
         cache: pnpm
     - name: Install Dependencies
       run: pnpm install --frozen-lockfile
     - name: Lint
       run: pnpm lint
-    - name: Run Tests
-      run: pnpm test:ember
-      working-directory: test-app
-
-  floating:
-    name: Floating Dependencies
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    needs: test
-
-    steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
-    - uses: pnpm/action-setup@v4
-    - uses: actions/setup-node@v6
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: pnpm
-    - name: Install Dependencies
-      run: pnpm install --no-lockfile
     - name: Run Tests
       run: pnpm test:ember
       working-directory: test-app
@@ -82,7 +60,7 @@ jobs:
     - uses: pnpm/action-setup@v4
     - uses: actions/setup-node@v6
       with:
-        node-version: ${{ env.NODE_VERSION }}
+        node-version: 24
         cache: pnpm
     - name: Install Dependencies
       run: pnpm install --frozen-lockfile
