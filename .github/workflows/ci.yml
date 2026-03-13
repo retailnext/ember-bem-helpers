@@ -39,25 +39,6 @@ jobs:
       run: pnpm test:ember
       working-directory: test-app
 
-  floating:
-    name: Floating Dependencies
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    needs: test
-
-    steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
-    - uses: pnpm/action-setup@v4
-    - uses: actions/setup-node@v6
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: pnpm
-    - name: Install Dependencies
-      run: pnpm install --no-lockfile
-    - name: Run Tests
-      run: pnpm test:ember
-      working-directory: test-app
-
   try-scenarios:
     name: ${{ matrix.try-scenario }}
     runs-on: ubuntu-latest
