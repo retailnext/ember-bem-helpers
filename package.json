@@ -16,7 +16,7 @@
     "test:ember": "pnpm --filter '*' test:ember"
   },
   "engines": {
-    "node": "20.* || >= 22"
+    "node": ">= 24"
   },
   "ember": {
     "edition": "octane"
