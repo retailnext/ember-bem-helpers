@@ -6,7 +6,7 @@ settings:
 
 overrides:
   ansi-html: 0.0.9
-  babel-plugin-module-resolver: 5.0.2
+  babel-plugin-module-resolver: 5.0.3
   cookie: 1.1.1
   package-json: 10.0.1
   tmp: '>=0.2.4'
@@ -1932,8 +1932,8 @@ packages:
     resolution: {integrity: sha512-QWjjFgSKtSRIcsBhJmEwS2laIdrA6na8HAlc/pEAhjHgQsah/gMiBFRZvbQTy//hWxR4BMwV7/Mya7q5H8uHeA==}
     engines: {node: 10.* || >= 12.*}
 
-  babel-plugin-module-resolver@5.0.2:
-    resolution: {integrity: sha512-9KtaCazHee2xc0ibfqsDeamwDps6FZNo5S0Q81dUqEuFzVwPhcT4J5jOqIVvgCA3Q/wO9hKYxN/Ds3tIsp5ygg==}
+  babel-plugin-module-resolver@5.0.3:
+    resolution: {integrity: sha512-h8h6H71ZvdLJZxZrYkaeR30BojTaV7O9GfqacY14SNj5CNB8ocL9tydNzTC0JrnNN7vY3eJhwCmkDj7tuEUaqQ==}
 
   babel-plugin-polyfill-corejs2@0.4.16:
     resolution: {integrity: sha512-xaVwwSfebXf0ooE11BJovZYKhFjIvQo7TsyVpETuIeH2JHv0k/T6Y5j22pPTvqYqmpkxdlPAJlyJ0tfOJAoMxw==}
@@ -7907,7 +7907,7 @@ snapshots:
       parse-static-imports: 1.1.0
       string.prototype.matchall: 4.0.12
 
-  babel-plugin-module-resolver@5.0.2:
+  babel-plugin-module-resolver@5.0.3:
     dependencies:
       find-babel-config: 2.1.2
       glob: 9.3.5
@@ -8905,7 +8905,7 @@ snapshots:
       babel-plugin-debug-macros: 0.3.4(@babel/core@7.29.0)
       babel-plugin-ember-data-packages-polyfill: 0.1.2
       babel-plugin-ember-modules-api-polyfill: 3.5.0
-      babel-plugin-module-resolver: 5.0.2
+      babel-plugin-module-resolver: 5.0.3
       broccoli-babel-transpiler: 7.8.1
       broccoli-debug: 0.6.5
       broccoli-funnel: 2.0.2
@@ -8940,7 +8940,7 @@ snapshots:
       babel-plugin-debug-macros: 0.3.4(@babel/core@7.29.0)
       babel-plugin-ember-data-packages-polyfill: 0.1.2
       babel-plugin-ember-modules-api-polyfill: 3.5.0
-      babel-plugin-module-resolver: 5.0.2
+      babel-plugin-module-resolver: 5.0.3
       broccoli-babel-transpiler: 8.0.2(@babel/core@7.29.0)
       broccoli-debug: 0.6.5
       broccoli-funnel: 3.0.8
