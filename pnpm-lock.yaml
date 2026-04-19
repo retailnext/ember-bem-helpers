@@ -178,8 +178,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       ember-eslint-parser:
-        specifier: 0.9.0
-        version: 0.9.0(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
+        specifier: 0.10.0
+        version: 0.10.0(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
       ember-load-initializers:
         specifier: 3.0.1
         version: 3.0.1(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))
@@ -1720,12 +1720,6 @@ packages:
     resolution: {integrity: sha512-SgmyvDPexWETQek+qzZnrG6844IaO02UVyOLhI4wpo82dpZJY9+6YZCKAMFzXb7qhx37mFK1QcPQ18tud+vo6Q==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@typescript-eslint/tsconfig-utils@8.57.1':
-    resolution: {integrity: sha512-0lgOZB8cl19fHO4eI46YUx2EceQqhgkPSuCGLlGi79L2jwYY1cxeYc1Nae8Aw1xjgW3PKVDLlr3YJ6Bxx8HkWg==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    peerDependencies:
-      typescript: '>=4.8.4 <6.0.0'
-
   '@typescript-eslint/tsconfig-utils@8.58.2':
     resolution: {integrity: sha512-3SR+RukipDvkkKp/d0jP0dyzuls3DbGmwDpVEc5wqk5f38KFThakqAAO0XMirWAE+kT00oTauTbzMFGPoAzB0A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
@@ -2965,20 +2959,20 @@ packages:
     engines: {node: '>= 20.19.0'}
     hasBin: true
 
-  ember-eslint-parser@0.5.13:
-    resolution: {integrity: sha512-b6ALDaxs9Bb4v0uagWud/5lECb78qpXHFv7M340dUHFW4Y0RuhlsfA4Rb+765X1+6KHp8G7TaAs0UgggWUqD3g==}
+  ember-eslint-parser@0.10.0:
+    resolution: {integrity: sha512-oq37TDYDBqR4fTGhJy/Yecw5VHlPJrSCd26KkwCKlhzAHMCzac+/HSln99COihKei2mMaaob17IrV3I9XL83YQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      '@babel/core': ^7.23.6
       '@typescript-eslint/parser': '*'
     peerDependenciesMeta:
       '@typescript-eslint/parser':
         optional: true
 
-  ember-eslint-parser@0.9.0:
-    resolution: {integrity: sha512-/Z/eoBmkeVdS+UjrocxKuLP4HG9K7XxZgpVvFjDBZ+o3gXYpbnvWkL+wYjaxzySXm3cuuCvnGW5NppIh9Vl/ig==}
+  ember-eslint-parser@0.5.13:
+    resolution: {integrity: sha512-b6ALDaxs9Bb4v0uagWud/5lECb78qpXHFv7M340dUHFW4Y0RuhlsfA4Rb+765X1+6KHp8G7TaAs0UgggWUqD3g==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
+      '@babel/core': ^7.23.6
       '@typescript-eslint/parser': '*'
     peerDependenciesMeta:
       '@typescript-eslint/parser':
@@ -7650,10 +7644,6 @@ snapshots:
       '@typescript-eslint/types': 8.58.2
       '@typescript-eslint/visitor-keys': 8.58.2
 
-  '@typescript-eslint/tsconfig-utils@8.57.1(typescript@6.0.3)':
-    dependencies:
-      typescript: 6.0.3
-
   '@typescript-eslint/tsconfig-utils@8.58.2(typescript@6.0.3)':
     dependencies:
       typescript: 6.0.3
@@ -9301,27 +9291,10 @@ snapshots:
       - walrus
       - whiskers
 
-  ember-eslint-parser@0.5.13(@babel/core@7.29.0)(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3):
-    dependencies:
-      '@babel/core': 7.29.0
-      '@babel/eslint-parser': 7.28.6(@babel/core@7.29.0)(eslint@9.39.4)
-      '@glimmer/syntax': 0.95.0
-      '@typescript-eslint/tsconfig-utils': 8.57.1(typescript@6.0.3)
-      content-tag: 2.0.3
-      eslint-scope: 7.2.2
-      html-tags: 3.3.1
-      mathml-tag-names: 2.1.3
-      svg-tags: 1.0.0
-    optionalDependencies:
-      '@typescript-eslint/parser': 8.58.2(eslint@9.39.4)(typescript@6.0.3)
-    transitivePeerDependencies:
-      - eslint
-      - typescript
-
-  ember-eslint-parser@0.9.0(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3):
+  ember-eslint-parser@0.10.0(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3):
     dependencies:
       '@glimmer/syntax': 0.95.0
-      '@typescript-eslint/tsconfig-utils': 8.57.1(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.3)
       content-tag: 4.1.1
       ember-estree: 0.4.2
       eslint-scope: 9.1.2
@@ -9331,6 +9304,23 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/parser': 8.58.2(eslint@9.39.4)(typescript@6.0.3)
     transitivePeerDependencies:
+      - typescript
+
+  ember-eslint-parser@0.5.13(@babel/core@7.29.0)(@typescript-eslint/parser@8.58.2(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3):
+    dependencies:
+      '@babel/core': 7.29.0
+      '@babel/eslint-parser': 7.28.6(@babel/core@7.29.0)(eslint@9.39.4)
+      '@glimmer/syntax': 0.95.0
+      '@typescript-eslint/tsconfig-utils': 8.58.2(typescript@6.0.3)
+      content-tag: 2.0.3
+      eslint-scope: 7.2.2
+      html-tags: 3.3.1
+      mathml-tag-names: 2.1.3
+      svg-tags: 1.0.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.58.2(eslint@9.39.4)(typescript@6.0.3)
+    transitivePeerDependencies:
+      - eslint
       - typescript
 
   ember-estree@0.4.2:
