@@ -178,8 +178,8 @@ importers:
         specifier: 4.0.2
         version: 4.0.2
       ember-eslint-parser:
-        specifier: 0.11.0
-        version: 0.11.0(@typescript-eslint/parser@8.59.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
+        specifier: 0.11.1
+        version: 0.11.1(@typescript-eslint/parser@8.59.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3)
       ember-load-initializers:
         specifier: 3.0.1
         version: 3.0.1(ember-source@6.12.0(@glimmer/component@2.1.1)(rsvp@4.8.5))
@@ -2973,6 +2973,15 @@ packages:
 
   ember-eslint-parser@0.11.0:
     resolution: {integrity: sha512-c/Rin7rfkb/auLp8oclVamHbMtGx/uKUfK9Aggpk97u8kaLm/5e4kCDSPaFrn9AQ4P+jnBiTw/Mr0nT9oR72Ug==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@typescript-eslint/parser': '*'
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
+
+  ember-eslint-parser@0.11.1:
+    resolution: {integrity: sha512-TE0ZGQiXkh5JdrQbcPYDsvOl5ukRIMbZ1KEg62hnZJ4wPKP8Tl011D75eiHWLDxMItoWO+DpzNd1bm7kld13Qg==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -9308,6 +9317,22 @@ snapshots:
       content-tag: 4.1.1
       ember-estree: 0.6.2
       eslint-scope: 9.1.2
+      html-tags: 5.1.0
+      mathml-tag-names: 4.0.0
+      svg-tags: 1.0.0
+    optionalDependencies:
+      '@typescript-eslint/parser': 8.59.0(eslint@9.39.4)(typescript@6.0.3)
+    transitivePeerDependencies:
+      - typescript
+
+  ember-eslint-parser@0.11.1(@typescript-eslint/parser@8.59.0(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3):
+    dependencies:
+      '@glimmer/syntax': 0.95.0
+      '@typescript-eslint/tsconfig-utils': 8.59.0(typescript@6.0.3)
+      content-tag: 4.1.1
+      ember-estree: 0.6.2
+      eslint-scope: 9.1.2
+      espree: 10.4.0
       html-tags: 5.1.0
       mathml-tag-names: 4.0.0
       svg-tags: 1.0.0
