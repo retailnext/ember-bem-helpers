@@ -36,7 +36,8 @@
       "tmp": ">=0.2.4",
       "diff@<8.0.3": ">=8.0.3",
       "serialize-javascript@<=7.0.2": ">=7.0.3",
-      "@babel/runtime@<7.26.10": ">=7.26.10"
+      "@babel/runtime@<7.26.10": ">=7.26.10",
+      "uuid@<14.0.0": ">=14.0.0"
     }
   },
   "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
