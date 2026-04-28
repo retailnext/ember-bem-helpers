@@ -13,6 +13,7 @@ overrides:
   diff@<8.0.3: '>=8.0.3'
   serialize-javascript@<=7.0.2: '>=7.0.3'
   '@babel/runtime@<7.26.10': '>=7.26.10'
+  uuid@<14.0.0: '>=14.0.0'
 
 importers:
 
@@ -2974,18 +2975,6 @@ packages:
     engines: {node: '>= 20.19.0'}
     hasBin: true
 
-  ember-eslint-parser@0.11.2:
-    resolution: {integrity: sha512-q38xuVA6OAYJU9zEyUazW9snG7igRWp62KfvJYoF191DHwzLnYnZzVd8u4iFS86s5RHPH1AAhVHJ+oqVTM3oOQ==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      '@babel/eslint-parser': ^7.28.6
-      '@typescript-eslint/parser': '*'
-    peerDependenciesMeta:
-      '@babel/eslint-parser':
-        optional: true
-      '@typescript-eslint/parser':
-        optional: true
-
   ember-eslint-parser@0.11.3:
     resolution: {integrity: sha512-tGLDVyemseglpXyt3MMnggWL2ROYglRGoL0lKVy+GySFcrD4YQbt5iyvrY9hcEnN62gmkFLIFRinIq5niqYKXg==}
     engines: {node: '>=16.0.0'}
@@ -2997,9 +2986,6 @@ packages:
         optional: true
       '@typescript-eslint/parser':
         optional: true
-
-  ember-estree@0.6.2:
-    resolution: {integrity: sha512-CeKa6FZ95jp6de+vjhmv2XmOGBB2V95iiH7RqI2av1nU0m1XhFZEG8npoEciklQqPEzFO5OXS41b0mGvXBsJCA==}
 
   ember-estree@0.6.3:
     resolution: {integrity: sha512-76NgApjUCvGHd6eC5BueOSwDdXtyO/+zSrZuKaWdRm3EyIbtE9ysvCOsm1cft8zl6dxdqeJpNpTJ5a1ljVIFMg==}
@@ -5774,8 +5760,8 @@ packages:
     resolution: {integrity: sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==}
     engines: {node: '>= 0.4.0'}
 
-  uuid@8.3.2:
-    resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+  uuid@14.0.0:
+    resolution: {integrity: sha512-Qo+uWgilfSmAhXCMav1uYFynlQO7fMFiMVZsQqZRMIXp0O7rR7qjkj+cPvBHLgBqi960QCoo/PH2/6ZtVqKvrg==}
     hasBin: true
 
   validate-npm-package-name@7.0.2:
@@ -7125,7 +7111,7 @@ snapshots:
       semver: 7.7.4
       silent-error: 1.1.1
       typescript: 6.0.3
-      uuid: 8.3.2
+      uuid: 14.0.0
       vscode-languageserver: 8.1.0
       vscode-languageserver-textdocument: 1.0.12
       vscode-uri: 3.1.0
@@ -9324,22 +9310,6 @@ snapshots:
       - walrus
       - whiskers
 
-  ember-eslint-parser@0.11.2(@babel/eslint-parser@7.28.6(@babel/core@7.29.0)(eslint@9.39.4))(@typescript-eslint/parser@8.59.1(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3):
-    dependencies:
-      '@glimmer/syntax': 0.95.0
-      '@typescript-eslint/tsconfig-utils': 8.59.1(typescript@6.0.3)
-      content-tag: 4.1.1
-      ember-estree: 0.6.2
-      eslint-scope: 9.1.2
-      html-tags: 5.1.0
-      mathml-tag-names: 4.0.0
-      svg-tags: 1.0.0
-    optionalDependencies:
-      '@babel/eslint-parser': 7.28.6(@babel/core@7.29.0)(eslint@9.39.4)
-      '@typescript-eslint/parser': 8.59.1(eslint@9.39.4)(typescript@6.0.3)
-    transitivePeerDependencies:
-      - typescript
-
   ember-eslint-parser@0.11.3(@babel/eslint-parser@7.28.6(@babel/core@7.29.0)(eslint@9.39.4))(@typescript-eslint/parser@8.59.1(eslint@9.39.4)(typescript@6.0.3))(typescript@6.0.3):
     dependencies:
       '@glimmer/syntax': 0.95.0
@@ -9355,13 +9325,6 @@ snapshots:
       '@typescript-eslint/parser': 8.59.1(eslint@9.39.4)(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
-
-  ember-estree@0.6.2:
-    dependencies:
-      '@glimmer/env': 0.1.7
-      '@glimmer/syntax': 0.95.0
-      content-tag: 4.1.1
-      oxc-parser: 0.119.0
 
   ember-estree@0.6.3:
     dependencies:
@@ -11228,7 +11191,7 @@ snapshots:
       is-wsl: 2.2.0
       semver: 7.7.4
       shellwords: 0.1.1
-      uuid: 8.3.2
+      uuid: 14.0.0
       which: 2.0.2
 
   node-releases@2.0.36: {}
@@ -12666,7 +12629,7 @@ snapshots:
 
   utils-merge@1.0.1: {}
 
-  uuid@8.3.2: {}
+  uuid@14.0.0: {}
 
   validate-npm-package-name@7.0.2: {}
 
