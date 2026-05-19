@@ -15,3 +15,6 @@ overrides:
 autoInstallPeers: false
 allowBuilds:
   core-js: false
+minimumReleaseAgeExclude:
+  - '@typescript-eslint/*'
+  - 'typescript-eslint'
