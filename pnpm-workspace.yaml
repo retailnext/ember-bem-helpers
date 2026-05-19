@@ -11,6 +11,10 @@ overrides:
   serialize-javascript@<=7.0.2: '>=7.0.3'
   '@babel/runtime@<7.26.10': '>=7.26.10'
   uuid@<14.0.0: '>=14.0.0'
+  ws@>=8.0.0 <8.20.1: ^8.20.1
 autoInstallPeers: false
 allowBuilds:
   core-js: false
+minimumReleaseAgeExclude:
+  - '@typescript-eslint/*'
+  - 'typescript-eslint'
