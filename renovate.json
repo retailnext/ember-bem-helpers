@@ -2,7 +2,8 @@
   "extends": [
     "config:recommended",
     ":preserveSemverRanges",
-    ":automergeMinor"
+    ":automergeMinor",
+    "security:minimumReleaseAgeNpm"
   ],
   "labels": [
     "dependencies",
