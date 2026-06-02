@@ -78,7 +78,7 @@
     "loader.js": "4.7.0",
     "prettier": "3.8.3",
     "prettier-plugin-ember-template-tag": "2.1.6",
-    "qunit": "2.25.0",
+    "qunit": "2.26.0",
     "qunit-dom": "3.5.1",
     "typescript": "6.0.3",
     "typescript-eslint": "8.60.0",
