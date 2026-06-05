@@ -6,7 +6,8 @@ overrides:
   babel-plugin-module-resolver: 5.0.3
   cookie: 1.1.1
   package-json: 10.0.1
-  tmp: '>=0.2.4'
+  tmp: '>=0.2.6'
+  qs@>=6.11.1 <=6.15.1: '>=6.15.2'
   diff@<8.0.3: '>=8.0.3'
   serialize-javascript@<=7.0.2: '>=7.0.3'
   '@babel/runtime@<7.26.10': '>=7.26.10'
