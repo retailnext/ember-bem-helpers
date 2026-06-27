@@ -4,7 +4,7 @@ packages:
 overrides:
   ansi-html: 0.0.9
   babel-plugin-module-resolver: 5.0.3
-  cookie: 1.1.1
+  cookie: 2.0.0
   package-json: 10.0.1
   tmp: '>=0.2.6'
   qs@>=6.11.1 <=6.15.1: '>=6.15.2'
