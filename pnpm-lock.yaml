@@ -76,8 +76,8 @@ importers:
         specifier: 13.4.0
         version: 13.4.0(@babel/eslint-parser@7.29.7(@babel/core@7.29.7)(eslint@9.39.4))(@typescript-eslint/parser@8.62.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)
       eslint-plugin-n:
-        specifier: 18.1.0
-        version: 18.1.0(eslint@9.39.4)(typescript@6.0.3)
+        specifier: 18.2.0
+        version: 18.2.0(eslint@9.39.4)(typescript@6.0.3)
       eslint-plugin-prettier:
         specifier: 5.5.6
         version: 5.5.6(@types/eslint@8.56.12)(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.4)
@@ -226,8 +226,8 @@ importers:
         specifier: 13.4.0
         version: 13.4.0(@babel/eslint-parser@7.29.7(@babel/core@7.29.7)(eslint@9.39.4))(@typescript-eslint/parser@8.62.0(eslint@9.39.4)(typescript@6.0.3))(eslint@9.39.4)(typescript@6.0.3)
       eslint-plugin-n:
-        specifier: 18.1.0
-        version: 18.1.0(eslint@9.39.4)(typescript@6.0.3)
+        specifier: 18.2.0
+        version: 18.2.0(eslint@9.39.4)(typescript@6.0.3)
       eslint-plugin-prettier:
         specifier: 5.5.6
         version: 5.5.6(@types/eslint@8.56.12)(eslint-config-prettier@10.1.8(eslint@9.39.4))(eslint@9.39.4)(prettier@3.8.4)
@@ -3218,10 +3218,6 @@ packages:
     resolution: {integrity: sha512-U2SN0w3OpjFRVlrc17E6TMDmH58Xl9rai1MblNjAdwWp07Kk+llmzX0hjDpQdrDGzwmvOtgM5yI+meYX6iZ2xA==}
     engines: {node: '>=10.2.0'}
 
-  enhanced-resolve@5.22.0:
-    resolution: {integrity: sha512-xYcDWrpELkFzz9SpZ3PlI6Eu6eD93Yf0WLDRxikGhWJ3MAir2SNZTIVCVZqZ/NUyx8AdMc2gT9C0gPiw18kG+A==}
-    engines: {node: '>=10.13.0'}
-
   enhanced-resolve@5.24.1:
     resolution: {integrity: sha512-7DdUaTjmNwMcH2gLr1qycesKII3BK4RLy/mdAb7x10Lq7bR4aNKHt1BR1ZALSv0rPM/hF5wYF0PhGop/rJm8vw==}
     engines: {node: '>=10.13.0'}
@@ -3317,8 +3313,8 @@ packages:
     peerDependencies:
       eslint: '>=8'
 
-  eslint-plugin-n@18.1.0:
-    resolution: {integrity: sha512-hkUm9EtnFV2h2fE16jNVUfCVUqvPzI7fGLsFdun5lFt/pbmf2kCgDx6ymi9rx+NCUSggBmurJCZOfG20JBs/kg==}
+  eslint-plugin-n@18.2.0:
+    resolution: {integrity: sha512-Hf7bfQ5qBC1U/E5jLM9s3pE5su4HHnPmPxVsYzHgS3X0Eg7/9cK7lf+JBx29YEyZ09DqJ34bS/bcb4Dyv3Th9w==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
     peerDependencies:
       eslint: '>=8.57.1'
@@ -10522,11 +10518,6 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  enhanced-resolve@5.22.0:
-    dependencies:
-      graceful-fs: 4.2.11
-      tapable: 2.3.3
-
   enhanced-resolve@5.24.1:
     dependencies:
       graceful-fs: 4.2.11
@@ -10676,10 +10667,10 @@ snapshots:
       eslint: 9.39.4
       eslint-compat-utils: 0.5.1(eslint@9.39.4)
 
-  eslint-plugin-n@18.1.0(eslint@9.39.4)(typescript@6.0.3):
+  eslint-plugin-n@18.2.0(eslint@9.39.4)(typescript@6.0.3):
     dependencies:
       '@eslint-community/eslint-utils': 4.9.1(eslint@9.39.4)
-      enhanced-resolve: 5.22.0
+      enhanced-resolve: 5.24.1
       eslint: 9.39.4
       eslint-plugin-es-x: 7.8.0(eslint@9.39.4)
       get-tsconfig: 4.13.6
