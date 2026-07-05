@@ -77,7 +77,7 @@
     "globals": "17.7.0",
     "loader.js": "4.7.0",
     "prettier": "3.9.4",
-    "prettier-plugin-ember-template-tag": "2.1.6",
+    "prettier-plugin-ember-template-tag": "2.1.7",
     "qunit": "2.26.0",
     "qunit-dom": "3.5.1",
     "typescript": "6.0.3",
