@@ -1,7 +1,6 @@
-import type { default as bem } from './helpers/bem';
-import type blockName from './helpers/block-name';
+import type { bem, blockName } from './index.ts';
 
-export default interface EmberBemHelpersRegistry {
+export default interface Registry {
   bem: typeof bem;
   'block-name': typeof blockName;
 }

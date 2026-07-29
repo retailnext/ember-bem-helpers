@@ -1,7 +1,7 @@
 import { module, test } from 'qunit';
-import { setupRenderingTest } from 'test-app/tests/helpers';
+import { setupRenderingTest } from 'ember-qunit';
 import { render, rerender } from '@ember/test-helpers';
-import { bem, blockName } from 'ember-bem-helpers';
+import { bem, blockName } from '#src/index.ts';
 import { concat } from '@ember/helper';
 import { tracked } from '@glimmer/tracking';
 import { find } from '@ember/test-helpers';

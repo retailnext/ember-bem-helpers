@@ -1,26 +1,23 @@
+/**
+ * This tsconfig is not used for publishing.
+ * It's only for the local editing experience
+ * (and linting)
+ */
 {
-  "extends": "@tsconfig/ember/tsconfig.json",
-  "compilerOptions": {
-    // The combination of `baseUrl` with `paths` allows Ember's classic package
-    // layout, which is not resolvable with the Node resolution algorithm, to
-    // work with TypeScript.
-    "baseUrl": ".",
-    "paths": {
-      "test-app/tests/*": ["tests/*"],
-      "test-app/*": ["app/*"],
-      "test-app/config/*": ["config/*"],
-      "*": ["types/*"]
-    }
-  },
+  "extends": "@ember/app-tsconfig",
   "include": [
-    "app/**/*",
+    "src/**/*",
     "tests/**/*",
-    "types/**/*"
+    "unpublished-development-types/**/*",
+    "demo-app/**/*"
   ],
-  "glint": {
-    "environment": [
-      "ember-loose",
-      "ember-template-imports"
+  "compilerOptions": {
+    "rootDir": ".",
+    "types": [
+      "ember-source/types",
+      "vite/client",
+      "@embroider/core/virtual",
+      "@glint/ember-tsc/types"
     ]
   }
 }

@@ -1,11 +1,18 @@
 import { babel } from '@rollup/plugin-babel';
-import copy from 'rollup-plugin-copy';
 import { Addon } from '@embroider/addon-dev/rollup';
+import { fileURLToPath } from 'node:url';
+import { resolve, dirname } from 'node:path';
+import alias from '@rollup/plugin-alias';
+import copy from 'rollup-plugin-copy';
 
 const addon = new Addon({
   srcDir: 'src',
   destDir: 'dist',
 });
+
+const rootDirectory = dirname(fileURLToPath(import.meta.url));
+const babelConfig = resolve(rootDirectory, './babel.publish.config.cjs');
+const tsConfig = resolve(rootDirectory, './tsconfig.publish.json');
 
 export default {
   // This provides defaults that work well alongside `publicEntrypoints` below.
@@ -43,12 +50,35 @@ export default {
     // By default, this will load the actual babel config from the file
     // babel.config.json.
     babel({
-      extensions: ['.js', '.gjs'],
+      extensions: ['.js', '.gjs', '.ts', '.gts'],
       babelHelpers: 'bundled',
+      configFile: babelConfig,
     }),
+
+    // Ensure that standalone .hbs files are properly integrated as Javascript.
+    addon.hbs(),
+
+    // Ensure that .gjs files are properly integrated as Javascript
+    addon.gjs(),
+
+    // Emit .d.ts declaration files
+    addon.declarations(
+      'declarations',
+      `pnpm ember-tsc --declaration --project ${tsConfig}`,
+    ),
+
+    // addons are allowed to contain imports of .css files, which we want rollup
+    // to leave alone and keep in the published output.
+    addon.keepAssets(['**/*.css']),
 
     // Remove leftover build artifacts when starting a new build.
     addon.clean(),
+
+    alias({
+      entries: [
+        { find: '#src', replacement: `${rootDirectory}/src` },
+      ],
+    }),
 
     // Copy Readme and License into published package
     copy({
