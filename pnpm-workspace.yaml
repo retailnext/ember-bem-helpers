@@ -1,25 +1,23 @@
-packages:
-  - 'ember-bem-helpers'
-  - 'test-app'
-overrides:
-  ansi-html: 0.0.9
-  babel-plugin-module-resolver: 5.0.3
-  cookie: 1.1.1
-  package-json: 10.0.1
-  tmp: '>=0.2.6'
-  qs@>=6.11.1 <=6.15.1: '>=6.15.2'
-  diff@<8.0.3: '>=8.0.3'
-  serialize-javascript@<=7.0.2: '>=7.0.3'
-  '@babel/runtime@<7.26.10': '>=7.26.10'
-  uuid@<14.0.0: '>=14.0.0'
-  ws@>=8.0.0 <8.21.0: ^8.21.0
-  form-data@>=4.0.0 <4.0.6: '>=4.0.6'
-  markdown-it@<14.2.0: '>=14.2.0'
-  js-yaml@<4.2.0: '>=4.2.0 <5'
-  brace-expansion@<1.1.16: '>=1.1.16 <2'
-  brace-expansion@>=2.0.0 <2.1.2: '>=2.1.2 <3'
-  brace-expansion@>=3.0.0 <5.0.8: '>=5.0.8'
-  shell-quote@<=1.8.4: ^1.8.5
-autoInstallPeers: false
 allowBuilds:
   core-js: false
+  esbuild: false
+
+# Docs: https://pnpm.io/settings
+# https://github.com/emberjs/rfcs/pull/907
+
+# we don't want addons to be bad citizens of the ecosystem
+autoInstallPeers: false
+
+overrides:
+  '@babel/runtime@<7.26.10': ^7.26.10
+  brace-expansion@<1.1.16: ">=1.1.16 <2"
+  brace-expansion@>=2.0.0 <2.1.2: ">=2.1.2 <3"
+  brace-expansion@>=3.0.0 <5.0.8: ">=5.0.8"
+  tmp@<0.2.6: ^0.2.6
+  tmp@<=0.2.3: ^0.2.4
+  ws@>=8.0.0 <8.20.1: ^8.20.1
+  ws@>=8.0.0 <8.21.0: ^8.21.0
+
+# we want true isolation,
+# if a dependency is not declared, we want an error
+resolvePeersFromWorkspaceRoot: false

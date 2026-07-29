@@ -1,3 +1,10 @@
 import { helper } from '@ember/component/helper';
 
-export default helper(function blockName() {});
+interface BlockNameSignature {
+  Args: {
+    Positional: [string];
+  };
+  Return: void;
+}
+
+export default helper<BlockNameSignature>(() => {});

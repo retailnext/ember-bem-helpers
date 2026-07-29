@@ -1,16 +1,34 @@
-import Application from 'test-app/app';
-import config from 'test-app/config/environment';
+import EmberApp from 'ember-strict-application-resolver';
+import EmberRouter from '@ember/routing/router';
 import * as QUnit from 'qunit';
 import { setApplication } from '@ember/test-helpers';
 import { setup } from 'qunit-dom';
-import { loadTests } from 'ember-qunit/test-loader';
-import { start, setupEmberOnerrorValidation } from 'ember-qunit';
+import { start as qunitStart, setupEmberOnerrorValidation } from 'ember-qunit';
+import { setTesting } from '@embroider/macros';
 
-setupEmberOnerrorValidation();
-loadTests();
+class Router extends EmberRouter {
+  location = 'none';
+  rootURL = '/';
+}
 
-setApplication(Application.create(config.APP));
+class TestApp extends EmberApp {
+  modules = {
+    './router': Router,
+    ...import.meta.glob('./helpers/*', { eager: true, base: '../src/' }),
+  };
+}
 
-setup(QUnit.assert);
+Router.map(function () {});
 
-start();
+export function start() {
+  setTesting(true);
+  setApplication(
+    TestApp.create({
+      autoboot: false,
+      rootElement: '#ember-testing',
+    }),
+  );
+  setup(QUnit.assert);
+  setupEmberOnerrorValidation();
+  qunitStart();
+}

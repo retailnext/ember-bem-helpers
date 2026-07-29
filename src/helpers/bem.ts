@@ -1,6 +1,17 @@
 import { helper } from '@ember/component/helper';
 
-export default helper(function bem([blockName, elem], modifiers = {}) {
+interface BemSignature {
+  Args: {
+    Positional?: [string?];
+    Named?: {
+      [key: string]: string | number | boolean | undefined;
+    };
+  };
+  Return: string;
+}
+
+export default helper<BemSignature>((positional = [], modifiers = {}) => {
+  const [blockName, elem] = positional as [string?, string?];
   const className = elem ? `${blockName}__${elem}` : blockName;
   const classes = Object.entries(modifiers)
     .filter(
