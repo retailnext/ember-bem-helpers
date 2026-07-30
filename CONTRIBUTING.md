@@ -13,19 +13,15 @@
 
 ## Building the addon
 
-- `cd ember-bem-helpers`
 - `pnpm build`
 
 ## Running tests
 
-- `cd test-app`
 - `pnpm test` – Runs the test suite on the current Ember version
 - `pnpm test:watch` – Runs the test suite in "watch mode"
-- `pnpm test:ember-compatibility` – Runs the test suite against multiple Ember versions
 
 ## Running the test application
 
-- `cd test-app`
 - `pnpm start`
 - Visit the test application at [http://localhost:4200](http://localhost:4200).
 

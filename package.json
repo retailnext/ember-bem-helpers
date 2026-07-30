@@ -1,28 +1,124 @@
 {
+  "name": "ember-bem-helpers",
+  "version": "3.0.0",
+  "description": "BEM helpers for Ember.js applications",
+  "keywords": [
+    "ember-addon",
+    "BEM",
+    "helper"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/retailnext/ember-bem-helpers.git"
   },
   "license": "MIT",
   "author": "RetailNext",
-  "scripts": {
-    "build": "pnpm --filter ember-bem-helpers build",
-    "lint": "pnpm --filter '*' lint",
-    "prepare": "pnpm build",
-    "start": "concurrently 'npm:start:*' --restart-after 5000 --prefix-colors cyan,white,yellow",
-    "start:addon": "pnpm --filter ember-bem-helpers start --no-watch.clearScreen",
-    "start:test-app": "pnpm --filter test-app start",
-    "test": "pnpm --filter '*' test",
-    "test:ember": "pnpm --filter '*' test:ember"
+  "imports": {
+    "#src/*": "./src/*"
   },
-  "engines": {
-    "node": ">= 24"
+  "exports": {
+    "./addon-main.js": "./addon-main.cjs",
+    ".": {
+      "types": "./declarations/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./helpers/*": {
+      "types": "./declarations/helpers/*.d.ts",
+      "default": "./dist/helpers/*.js"
+    },
+    "./_app_/*": "./dist/_app_/*.js",
+    "./ast-transform": "./lib/bem-ast-transform.cjs"
+  },
+  "files": [
+    "addon-main.cjs",
+    "declarations",
+    "dist",
+    "lib"
+  ],
+  "scripts": {
+    "build": "rollup --config",
+    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto",
+    "lint:hbs": "ember-template-lint . --no-error-on-unmatched-pattern",
+    "lint:hbs:fix": "ember-template-lint . --fix --no-error-on-unmatched-pattern",
+    "lint:js": "eslint . --cache",
+    "lint:js:fix": "eslint . --fix",
+    "lint:publish": "pnpm build && publint run --level error",
+    "lint:types": "ember-tsc --noEmit",
+    "prepack": "rollup --config",
+    "start": "vite dev",
+    "test": "vite build --mode=development --out-dir dist-tests && testem --file testem.cjs ci --port 0",
+    "test:server": "VITE_TEST_SERVER=true vite dev --port 9998 --host"
+  },
+  "dependencies": {
+    "@embroider/addon-shim": "1.10.3",
+    "decorator-transforms": "2.4.0"
+  },
+  "devDependencies": {
+    "@babel/core": "8.0.1",
+    "@babel/eslint-parser": "8.0.1",
+    "@babel/plugin-transform-typescript": "8.0.1",
+    "@babel/runtime": "8.0.0",
+    "@ember/app-tsconfig": "2.0.0",
+    "@ember/library-tsconfig": "2.0.0",
+    "@ember/test-helpers": "5.4.3",
+    "@ember/test-waiters": "4.1.2",
+    "@embroider/addon-dev": "8.3.1",
+    "@embroider/compat": "4.1.21",
+    "@embroider/core": "4.6.2",
+    "@embroider/macros": "1.20.5",
+    "@embroider/vite": "1.7.8",
+    "@eslint/js": "9.39.5",
+    "@glimmer/component": "2.1.1",
+    "@glint/ember-tsc": "1.8.14",
+    "@glint/template": "1.7.10",
+    "@glint/tsserver-plugin": "2.5.20",
+    "@rollup/plugin-alias": "6.0.0",
+    "@rollup/plugin-babel": "7.1.0",
+    "@types/qunit": "2.19.14",
+    "babel-plugin-ember-template-compilation": "4.0.0",
+    "concurrently": "10.0.4",
+    "ember-cli-htmlbars": "7.0.1",
+    "ember-page-title": "9.0.3",
+    "ember-qunit": "9.1.0",
+    "ember-source": "6.12.0",
+    "ember-strict-application-resolver": "0.1.1",
+    "ember-template-lint": "7.9.3",
+    "eslint": "9.39.5",
+    "eslint-config-prettier": "10.1.8",
+    "eslint-plugin-ember": "13.4.1",
+    "eslint-plugin-import": "2.32.0",
+    "eslint-plugin-n": "18.2.2",
+    "globals": "17.8.0",
+    "prettier": "3.9.6",
+    "prettier-plugin-ember-template-tag": "2.1.7",
+    "publint": "0.3.22",
+    "qunit": "2.26.0",
+    "qunit-dom": "3.6.0",
+    "rollup": "4.62.3",
+    "rollup-plugin-copy": "3.5.0",
+    "testem": "3.20.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.65.0",
+    "vite": "8.1.5"
+  },
+  "peerDependencies": {
+    "ember-source": ">=6.4.0"
   },
   "ember": {
     "edition": "octane"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "version": 2,
+    "type": "addon",
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./helpers/bem.js": "./dist/_app_/helpers/bem.js",
+      "./helpers/block-name.js": "./dist/_app_/helpers/block-name.js"
+    }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   },
   "bugs": {
     "url": "https://github.com/retailnext/ember-bem-helpers/issues"
