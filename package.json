@@ -124,5 +124,10 @@
     "url": "https://github.com/retailnext/ember-bem-helpers/issues"
   },
   "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
-  "packageManager": "pnpm@11.18.0"
+  "packageManager": "pnpm@11.18.0",
+  "pnpm": {
+    "overrides": {
+      "brace-expansion": "1.1.17"
+    }
+  }
 }
