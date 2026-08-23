@@ -95,7 +95,7 @@
     "publint": "0.3.24",
     "qunit": "2.26.0",
     "qunit-dom": "3.6.0",
-    "rollup": "4.62.4",
+    "rollup": "4.62.5",
     "rollup-plugin-copy": "3.5.0",
     "testem": "3.20.1",
     "typescript": "6.0.3",
