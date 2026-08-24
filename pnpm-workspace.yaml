@@ -10,9 +10,11 @@ autoInstallPeers: false
 
 overrides:
   '@babel/runtime@<7.26.10': ^7.26.10
-  brace-expansion@<1.1.16: ">=1.1.16 <2"
-  brace-expansion@>=2.0.0 <2.1.2: ">=2.1.2 <3"
+  brace-expansion@<1.1.18: ">=1.1.18 <2"
+  brace-expansion@>=2.0.0 <2.1.4: ">=2.1.4 <3"
   brace-expansion@>=3.0.0 <5.0.8: ">=5.0.8"
+  js-yaml@>=4.0.0 <4.3.1: ^4.3.1
+  socket.io-parser@>=4.0.0 <4.2.7: ^4.2.7
   tmp@<0.2.6: ^0.2.6
   tmp@<=0.2.3: ^0.2.4
   ws@>=8.0.0 <8.20.1: ^8.20.1
