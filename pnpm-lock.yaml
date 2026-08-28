@@ -73,8 +73,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(supports-color@10.2.2)
       '@glint/ember-tsc':
-        specifier: 1.10.2
-        version: 1.10.2(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
+        specifier: 1.11.0
+        version: 1.11.0(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@glint/template':
         specifier: 1.8.0
         version: 1.8.0
@@ -981,6 +981,16 @@ packages:
 
   '@glint/ember-tsc@1.10.2':
     resolution: {integrity: sha512-s5wj8Vdw5vTcPaJtI0thd9naNO/3P4mSEspYSYuACS8618Ovt4nYgRi9XMZNAU/p12oyNpvmXn96rAjhsi6+dw==}
+    hasBin: true
+    peerDependencies:
+      ember-source: '>=3.28.0'
+      typescript: '>=5.6.0'
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
+
+  '@glint/ember-tsc@1.11.0':
+    resolution: {integrity: sha512-BP0621N68b6yvie2WjO96JBWAU8XltqZZgbgRjEydaKlx/yJLlALlnlSVF3BhZH7SC/0Ffps8pHMXvOQkkP59w==}
     hasBin: true
     peerDependencies:
       ember-source: '>=3.28.0'
@@ -2524,6 +2534,9 @@ packages:
 
   ember-estree@0.6.10:
     resolution: {integrity: sha512-5nItZGzvxHgoCdASQbn9qBzF4sdjSggUeZpXdihAanmYWm6XkObT/TlUvakYtoKret1/8gm0jNLwNPqZYwHtCw==}
+
+  ember-estree@0.8.0:
+    resolution: {integrity: sha512-FvH2jGEkcIMPDPgQLHFVSTyF5p7HscVIiJ36v6ce1C9q/6KXCcE0EB2idaGcDWlhB42I3PmLg+vLbUp2GIznBQ==}
 
   ember-page-title@9.0.3:
     resolution: {integrity: sha512-fedRHUsvq8tIZgOii8jTrfAyeq+la/9H5eAzhNNwEyzo7nDMmqK2SxsyBUGXprd8fOacsPabLlzlucMi/4mUpA==}
@@ -6831,7 +6844,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@glint/ember-tsc@1.10.2(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
+  '@glint/ember-tsc@1.11.0(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
     dependencies:
       '@glimmer/syntax': 0.95.0
       '@glint/template': 1.8.0
@@ -6843,6 +6856,7 @@ snapshots:
       '@volar/test-utils': 2.4.28(typescript@6.0.3)
       '@volar/typescript': 2.4.28(typescript@6.0.3)
       content-tag: 4.2.0
+      ember-estree: 0.8.0
       silent-error: 1.1.1(supports-color@10.2.2)
       typescript: 6.0.3
       volar-service-html: 0.0.71(@volar/language-service@2.4.28(typescript@6.0.3))
@@ -8390,6 +8404,13 @@ snapshots:
       - typescript
 
   ember-estree@0.6.10:
+    dependencies:
+      '@glimmer/env': 0.1.7
+      '@glimmer/syntax': 0.95.0
+      content-tag: 4.2.0
+      oxc-parser: 0.130.0
+
+  ember-estree@0.8.0:
     dependencies:
       '@glimmer/env': 0.1.7
       '@glimmer/syntax': 0.95.0
