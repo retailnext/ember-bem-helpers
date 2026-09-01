@@ -124,5 +124,5 @@
     "url": "https://github.com/retailnext/ember-bem-helpers/issues"
   },
   "homepage": "https://github.com/retailnext/ember-bem-helpers#readme",
-  "packageManager": "pnpm@11.24.0"
+  "packageManager": "pnpm@11.25.0"
 }
