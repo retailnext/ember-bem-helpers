@@ -79,8 +79,8 @@ importers:
         specifier: 1.8.1
         version: 1.8.1
       '@glint/tsserver-plugin':
-        specifier: 2.7.3
-        version: 2.7.3(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
+        specifier: 2.7.5
+        version: 2.7.5(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       '@rollup/plugin-alias':
         specifier: 6.0.0
         version: 6.0.0(rollup@4.63.1)
@@ -979,16 +979,6 @@ packages:
   '@glimmer/wire-format@0.94.8':
     resolution: {integrity: sha512-A+Cp5m6vZMAEu0Kg/YwU2dJZXyYxVJs2zI57d3CP6NctmX7FsT8WjViiRUmt5abVmMmRH5b8BUovqY6GSMAdrw==}
 
-  '@glint/ember-tsc@1.11.0':
-    resolution: {integrity: sha512-BP0621N68b6yvie2WjO96JBWAU8XltqZZgbgRjEydaKlx/yJLlALlnlSVF3BhZH7SC/0Ffps8pHMXvOQkkP59w==}
-    hasBin: true
-    peerDependencies:
-      ember-source: '>=3.28.0'
-      typescript: '>=5.6.0'
-    peerDependenciesMeta:
-      ember-source:
-        optional: true
-
   '@glint/ember-tsc@1.11.2':
     resolution: {integrity: sha512-SByYFCw0janG/VntS5xZwKYZXq1y4uE81KgC0bt5rgprOWAcEUmrPj3Nt3ZEGdsYZ+36SvHuf+vacawuy/y3aA==}
     hasBin: true
@@ -999,14 +989,11 @@ packages:
       ember-source:
         optional: true
 
-  '@glint/template@1.8.0':
-    resolution: {integrity: sha512-TeVv3JnM0wbF86Sl2YyNhxeTEPnR5Q0xtIKqZueVzX8ouL3bj49Rk1gS0jFq7FNL7u6R+1oqToZBQmI+OCL4QA==}
-
   '@glint/template@1.8.1':
     resolution: {integrity: sha512-Yo2K8Bbd2BG1jJyNqLMkSZNxLowim5lwvbOAjBIjnwQMa97tLinmkyOfozjFsOGF8vKlP3t7rRJ2wWjaulMRCQ==}
 
-  '@glint/tsserver-plugin@2.7.3':
-    resolution: {integrity: sha512-6tShPFE4gnBoWsonDfQs4KV8XqLL1BhTTrucSikbyVT5L0SEe6PyZ7eAFKafkkP2A6kykRRgfTWGHwYS+YMdAw==}
+  '@glint/tsserver-plugin@2.7.5':
+    resolution: {integrity: sha512-yUOWUwan9CvUmxzpKR8JeQ2A807tQaFCUgLFGkrhMjLQiDA3Dif9TGV3Mat7NYC/rVLGik77tI4o0vz2xy3wFA==}
 
   '@handlebars/parser@2.2.2':
     resolution: {integrity: sha512-n/SZW+12rwikx/f8YcSv9JCi5p9vn1Bnts9ZtVvfErG4h0gbjHI1H1ZMhVUnaOC7yzFc6PtsCKIK8XeTnL90Gw==}
@@ -6823,10 +6810,10 @@ snapshots:
     dependencies:
       '@glimmer/interfaces': 0.94.6
 
-  '@glint/ember-tsc@1.11.0(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
+  '@glint/ember-tsc@1.11.2(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)':
     dependencies:
       '@glimmer/syntax': 0.95.0
-      '@glint/template': 1.8.0
+      '@glint/template': 1.8.1
       '@volar/kit': 2.4.28(typescript@5.9.3)
       '@volar/language-core': 2.4.28
       '@volar/language-server': 2.4.28(typescript@5.9.3)
@@ -6873,13 +6860,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@glint/template@1.8.0': {}
-
   '@glint/template@1.8.1': {}
 
-  '@glint/tsserver-plugin@2.7.3(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)':
+  '@glint/tsserver-plugin@2.7.5(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)':
     dependencies:
-      '@glint/ember-tsc': 1.11.0(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
+      '@glint/ember-tsc': 1.11.2(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@5.9.3)
       '@volar/language-core': 2.4.28
       '@volar/typescript': 2.4.28(typescript@5.9.3)
       jiti: 2.7.0
