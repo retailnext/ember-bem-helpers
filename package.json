@@ -97,7 +97,7 @@
     "qunit-dom": "3.6.0",
     "rollup": "4.63.1",
     "rollup-plugin-copy": "3.5.0",
-    "testem": "3.20.2",
+    "testem": "3.21.0",
     "typescript": "6.0.3",
     "typescript-eslint": "8.69.0",
     "vite": "8.2.2"
