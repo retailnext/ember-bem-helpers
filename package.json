@@ -93,7 +93,7 @@
     "prettier": "3.9.9",
     "prettier-plugin-ember-template-tag": "2.1.8",
     "publint": "0.3.24",
-    "qunit": "2.26.0",
+    "qunit": "3.0.0",
     "qunit-dom": "3.6.0",
     "rollup": "4.63.5",
     "rollup-plugin-copy": "3.5.0",
