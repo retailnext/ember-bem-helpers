@@ -8,5 +8,16 @@
   "labels": [
     "dependencies",
     "ui"
+  ],
+  "packageRules": [
+    {
+      "description": "Disable updates of dependency overrides. They pin a transitive dependency to a patched version within the major its parent expects, bumping them to a new major breaks that parent. Remove them once the parent no longer needs them.",
+      "enabled": false,
+      "matchDepTypes": [
+        "pnpm-workspace.overrides",
+        "pnpm.overrides",
+        "overrides"
+      ]
+    }
   ]
 }
