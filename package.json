@@ -73,7 +73,7 @@
     "@glint/ember-tsc": "1.13.1",
     "@glint/template": "1.11.0",
     "@glint/tsserver-plugin": "2.7.12",
-    "@rollup/plugin-alias": "6.0.0",
+    "@rollup/plugin-alias": "6.0.1",
     "@rollup/plugin-babel": "7.1.0",
     "@types/qunit": "2.19.14",
     "babel-plugin-ember-template-compilation": "4.0.1",
