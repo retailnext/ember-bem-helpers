@@ -69,7 +69,7 @@
     "@embroider/macros": "1.21.4",
     "@embroider/vite": "1.8.0",
     "@eslint/js": "10.0.1",
-    "@glimmer/component": "2.2.0",
+    "@glimmer/component": "2.2.1",
     "@glint/ember-tsc": "1.14.2",
     "@glint/template": "1.11.0",
     "@glint/tsserver-plugin": "2.7.15",
