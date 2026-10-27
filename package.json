@@ -51,7 +51,7 @@
     "test:server": "VITE_TEST_SERVER=true vite dev --port 9998 --host"
   },
   "dependencies": {
-    "@embroider/addon-shim": "1.10.3",
+    "@embroider/addon-shim": "1.11.0",
     "decorator-transforms": "2.4.0"
   },
   "devDependencies": {
