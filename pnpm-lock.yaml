@@ -203,19 +203,19 @@ importers:
         version: 4.1.2
       '@embroider/addon-dev':
         specifier: 8.4.2
-        version: 8.4.2(@glint/template@1.11.0)(rollup@4.66.0)(supports-color@10.2.2)
+        version: 8.4.2(@glint/template@1.11.1)(rollup@4.66.0)(supports-color@10.2.2)
       '@embroider/compat':
         specifier: 4.1.28
-        version: 4.1.28(@embroider/core@4.6.10(@glint/template@1.11.0)(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)
+        version: 4.1.28(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)
       '@embroider/core':
         specifier: 4.6.10
-        version: 4.6.10(@glint/template@1.11.0)(supports-color@10.2.2)
+        version: 4.6.10(@glint/template@1.11.1)(supports-color@10.2.2)
       '@embroider/macros':
         specifier: 1.21.4
-        version: 1.21.4(@babel/core@8.0.10)(@glint/template@1.11.0)(supports-color@10.2.2)
+        version: 1.21.4(@babel/core@8.0.10)(@glint/template@1.11.1)(supports-color@10.2.2)
       '@embroider/vite':
         specifier: 1.8.0
-        version: 1.8.0(@babel/core@8.0.10)(@embroider/core@4.6.10(@glint/template@1.11.0)(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)(vite@8.3.5(@types/node@22.20.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))
+        version: 1.8.0(@babel/core@8.0.10)(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)(vite@8.3.5(@types/node@22.20.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))
       '@eslint/js':
         specifier: 10.0.1
         version: 10.0.1(eslint@10.13.0(jiti@2.7.0)(supports-color@10.2.2))
@@ -226,8 +226,8 @@ importers:
         specifier: 1.14.2
         version: 1.14.2(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@glint/template':
-        specifier: 1.11.0
-        version: 1.11.0
+        specifier: 1.11.1
+        version: 1.11.1
       '@glint/tsserver-plugin':
         specifier: 2.7.15
         version: 2.7.15(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
@@ -1220,6 +1220,9 @@ packages:
 
   '@glint/template@1.11.0':
     resolution: {integrity: sha512-jTqDDMzQx4t7xQWx9cbS8b1ElagzmZrt6NEXfDZt5T+x0kIWrU/CkiuI4lZ/OlFup0DLTA41leeotcPeIOaj0g==}
+
+  '@glint/template@1.11.1':
+    resolution: {integrity: sha512-E6jqIzkgeM0wq0dRHstf0UXx68DSmK+xozh0E6JsorHLdcu+1tDW7T+Espun2zeWjBQxnUH0F6Hn7IF3CmmyGg==}
 
   '@glint/tsserver-plugin@2.7.15':
     resolution: {integrity: sha512-IcfvD2vTl87ifVUaVCuy603AQk4Uy6taa+EJydBLAWp08/dgL5vmXC2GfO8riiR9IfndIyL5ei4weNHDXoVbmA==}
@@ -6891,9 +6894,9 @@ snapshots:
     dependencies:
       '@embroider/addon-shim': 1.11.0
 
-  '@embroider/addon-dev@8.4.2(@glint/template@1.11.0)(rollup@4.66.0)(supports-color@10.2.2)':
+  '@embroider/addon-dev@8.4.2(@glint/template@1.11.1)(rollup@4.66.0)(supports-color@10.2.2)':
     dependencies:
-      '@embroider/core': 4.6.10(@glint/template@1.11.0)(supports-color@10.2.2)
+      '@embroider/core': 4.6.10(@glint/template@1.11.1)(supports-color@10.2.2)
       '@rollup/pluginutils': 5.4.0(rollup@4.66.0)
       content-tag: 4.2.0
       execa: 5.1.1
@@ -6914,7 +6917,7 @@ snapshots:
 
   '@embroider/addon-shim@1.11.0': {}
 
-  '@embroider/compat@4.1.28(@embroider/core@4.6.10(@glint/template@1.11.0)(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)':
+  '@embroider/compat@4.1.28(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)':
     dependencies:
       '@babel/code-frame': 7.29.7
       '@babel/core': 7.29.7(supports-color@10.2.2)
@@ -6925,8 +6928,8 @@ snapshots:
       '@babel/preset-env': 7.29.7(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@babel/runtime': 7.29.7
       '@babel/traverse': 7.29.8(supports-color@10.2.2)
-      '@embroider/core': 4.6.10(@glint/template@1.11.0)(supports-color@10.2.2)
-      '@embroider/macros': 1.21.4(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)
+      '@embroider/core': 4.6.10(@glint/template@1.11.1)(supports-color@10.2.2)
+      '@embroider/macros': 1.21.4(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)
       '@types/babel__code-frame': 7.27.0
       assert-never: 1.4.0
       babel-import-util: 3.0.1
@@ -6967,12 +6970,12 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@embroider/core@4.6.10(@glint/template@1.11.0)(supports-color@10.2.2)':
+  '@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/parser': 7.29.8
       '@babel/traverse': 7.29.8(supports-color@10.2.2)
-      '@embroider/macros': 1.21.4(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)
+      '@embroider/macros': 1.21.4(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)
       '@embroider/reverse-exports': 0.2.0
       '@embroider/shared-internals': 3.2.1(supports-color@10.2.2)
       assert-never: 1.4.0
@@ -7003,7 +7006,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@embroider/macros@1.21.4(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)':
+  '@embroider/macros@1.21.4(@babel/core@7.29.7(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)':
     dependencies:
       '@embroider/shared-internals': 3.2.1(supports-color@10.2.2)
       assert-never: 1.4.0
@@ -7014,12 +7017,12 @@ snapshots:
       resolve: 1.22.12
       semver: 7.8.5
     optionalDependencies:
-      '@glint/template': 1.11.0
+      '@glint/template': 1.11.1
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
 
-  '@embroider/macros@1.21.4(@babel/core@8.0.10)(@glint/template@1.11.0)(supports-color@10.2.2)':
+  '@embroider/macros@1.21.4(@babel/core@8.0.10)(@glint/template@1.11.1)(supports-color@10.2.2)':
     dependencies:
       '@embroider/shared-internals': 3.2.1(supports-color@10.2.2)
       assert-never: 1.4.0
@@ -7030,7 +7033,7 @@ snapshots:
       resolve: 1.22.12
       semver: 7.8.5
     optionalDependencies:
-      '@glint/template': 1.11.0
+      '@glint/template': 1.11.1
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
@@ -7058,10 +7061,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/vite@1.8.0(@babel/core@8.0.10)(@embroider/core@4.6.10(@glint/template@1.11.0)(supports-color@10.2.2))(@glint/template@1.11.0)(supports-color@10.2.2)(vite@8.3.5(@types/node@22.20.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))':
+  '@embroider/vite@1.8.0(@babel/core@8.0.10)(@embroider/core@4.6.10(@glint/template@1.11.1)(supports-color@10.2.2))(@glint/template@1.11.1)(supports-color@10.2.2)(vite@8.3.5(@types/node@22.20.2)(jiti@2.7.0)(terser@5.51.2)(yaml@2.9.0))':
     dependencies:
-      '@embroider/core': 4.6.10(@glint/template@1.11.0)(supports-color@10.2.2)
-      '@embroider/macros': 1.21.4(@babel/core@8.0.10)(@glint/template@1.11.0)(supports-color@10.2.2)
+      '@embroider/core': 4.6.10(@glint/template@1.11.1)(supports-color@10.2.2)
+      '@embroider/macros': 1.21.4(@babel/core@8.0.10)(@glint/template@1.11.1)(supports-color@10.2.2)
       '@embroider/reverse-exports': 0.2.0
       assert-never: 1.4.0
       browserslist: 4.28.9
@@ -7212,6 +7215,8 @@ snapshots:
       - supports-color
 
   '@glint/template@1.11.0': {}
+
+  '@glint/template@1.11.1': {}
 
   '@glint/tsserver-plugin@2.7.15(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)':
     dependencies:
