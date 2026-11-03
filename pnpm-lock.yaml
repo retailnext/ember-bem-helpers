@@ -223,8 +223,8 @@ importers:
         specifier: 2.2.1
         version: 2.2.1
       '@glint/ember-tsc':
-        specifier: 1.14.2
-        version: 1.14.2(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
+        specifier: 1.14.3
+        version: 1.14.3(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)
       '@glint/template':
         specifier: 1.11.1
         version: 1.11.1
@@ -1210,6 +1210,16 @@ packages:
 
   '@glint/ember-tsc@1.14.2':
     resolution: {integrity: sha512-9/RjfXanbHnpNZHLEnO0Lk1q/i87b+OW5XUKmcs9g8L+HFME//pOcb2ItfjUGqDm7xBPIkHnaKv0VD4j530moQ==}
+    hasBin: true
+    peerDependencies:
+      ember-source: '>=3.28.0'
+      typescript: '>=5.6.0'
+    peerDependenciesMeta:
+      ember-source:
+        optional: true
+
+  '@glint/ember-tsc@1.14.3':
+    resolution: {integrity: sha512-/NHLni6c5o1KsV6l+P6k0qzmijJmVCs3qZ+4Slrxx2ps8/T7NWIB2PUNvCV27A3JcPcLd/Jr5x5LeysoW3YPTA==}
     hasBin: true
     peerDependencies:
       ember-source: '>=3.28.0'
@@ -7189,10 +7199,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@glint/ember-tsc@1.14.2(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
+  '@glint/ember-tsc@1.14.3(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3)':
     dependencies:
       '@glimmer/syntax': 0.95.0
-      '@glint/template': 1.11.0
+      '@glint/template': 1.11.1
       '@volar/kit': 2.4.30(typescript@6.0.3)
       '@volar/language-core': 2.4.30
       '@volar/language-server': 2.4.30(typescript@6.0.3)
