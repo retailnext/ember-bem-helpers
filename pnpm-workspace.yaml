@@ -9,6 +9,10 @@ allowBuilds:
 autoInstallPeers: false
 
 overrides:
+  brace-expansion@<1.1.21: ">=1.1.21 <2"
+  brace-expansion@>=2.0.0 <2.1.7: ">=2.1.7 <3"
+  brace-expansion@>=4.0.0 <5.0.12: ">=5.0.12"
+  minimatch@>=7.0.0 <11.0.1: ^11.0.1
   tmp@<0.2.6: ^0.2.6
   tmp@<=0.2.3: ^0.2.4
 
