@@ -55,10 +55,10 @@
     "decorator-transforms": "2.4.0"
   },
   "devDependencies": {
-    "@babel/core": "8.0.10",
+    "@babel/core": "8.1.0",
     "@babel/eslint-parser": "8.0.7",
     "@babel/plugin-transform-typescript": "8.0.6",
-    "@babel/runtime": "8.0.10",
+    "@babel/runtime": "8.1.0",
     "@ember/app-tsconfig": "2.1.0",
     "@ember/library-tsconfig": "3.0.0",
     "@ember/test-helpers": "5.7.0",
