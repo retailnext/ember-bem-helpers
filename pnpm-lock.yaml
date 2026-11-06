@@ -200,8 +200,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0
       '@ember/test-helpers':
-        specifier: 5.7.0
-        version: 5.7.0(@babel/core@8.1.0)
+        specifier: 5.8.0
+        version: 5.8.0(@babel/core@8.1.0)
       '@ember/test-waiters':
         specifier: 4.1.2
         version: 4.1.2
@@ -258,7 +258,7 @@ importers:
         version: 9.0.3
       ember-qunit:
         specifier: 9.2.0
-        version: 9.2.0(@ember/test-helpers@5.7.0(@babel/core@8.1.0))(qunit@3.0.0)
+        version: 9.2.0(@ember/test-helpers@5.8.0(@babel/core@8.1.0))(qunit@3.0.0)
       ember-source:
         specifier: 6.12.1
         version: 6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2)
@@ -1088,8 +1088,8 @@ packages:
   '@ember/library-tsconfig@3.0.0':
     resolution: {integrity: sha512-2o4D+YB0efPe8HJJlaC303qx8dWH2khcKe5ctp4fMCfqP9EibNnyWScNb2MkaFjEqrdRXqTVK+lGHXOoM70omw==}
 
-  '@ember/test-helpers@5.7.0':
-    resolution: {integrity: sha512-h77kAJpFQ9fffuLc9+XhoYsk7URDLd7jTLnq7Yk9gGvQ41JupxrGMHoRjyboytSbwngSy+0yXyMhNYfH8ng4xg==}
+  '@ember/test-helpers@5.8.0':
+    resolution: {integrity: sha512-JvQr0F8f5YfhshcG9gpOhZyuCPHFGMnWYaMH0rPf33W2R+CocSdp/aHr7D5wUg9Tl7aBiMJW6yz80MpTPVpTWQ==}
 
   '@ember/test-waiters@4.1.2':
     resolution: {integrity: sha512-zJwFaHLHjJn6mKoXYVM1SEyMT+U1JpaaSKg3JBmxHJwiIoJRI5djJ/CE33Z7N09mk5JfXd2xdhbd9LBWdlvAzg==}
@@ -6885,7 +6885,7 @@ snapshots:
 
   '@ember/library-tsconfig@3.0.0': {}
 
-  '@ember/test-helpers@5.7.0(@babel/core@8.1.0)':
+  '@ember/test-helpers@5.8.0(@babel/core@8.1.0)':
     dependencies:
       '@ember/test-waiters': 4.1.2
       '@embroider/addon-shim': 1.11.0
@@ -8832,9 +8832,9 @@ snapshots:
       '@embroider/addon-shim': 1.11.0
       '@simple-dom/document': 1.4.0
 
-  ember-qunit@9.2.0(@ember/test-helpers@5.7.0(@babel/core@8.1.0))(qunit@3.0.0):
+  ember-qunit@9.2.0(@ember/test-helpers@5.8.0(@babel/core@8.1.0))(qunit@3.0.0):
     dependencies:
-      '@ember/test-helpers': 5.7.0(@babel/core@8.1.0)
+      '@ember/test-helpers': 5.8.0(@babel/core@8.1.0)
       '@embroider/addon-shim': 1.11.0
       qunit: 3.0.0
       qunit-theme-ember: 1.0.0
