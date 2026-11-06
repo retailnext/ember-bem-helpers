@@ -128,6 +128,20 @@ module('Integration | Helper | bem hbs', function (hooks) {
     assert.dom('.foo').exists('Block class is correct');
   });
 
+  test('already transformed template is left unchanged', async function (assert) {
+    await render(hbs`
+      {{#let "foo" as |blockName|}}
+        <div class={{bem blockName}}></div>
+        <div class={{bem blockName "bar" mod=true}}></div>
+        <div class={{concat (bem blockName "baz") " qux"}}></div>
+      {{/let}}`);
+
+    assert.dom('.foo').exists('Block class is correct');
+    assert.dom('.foo__bar').hasClass('foo__bar--mod', 'Elem class is correct');
+    assert.dom('.foo__baz').hasClass('qux', 'Sub-expression class is correct');
+    assert.dom('.foo__foo').doesNotExist('Block name is not duplicated');
+  });
+
   test('undefined modifier values are filtered out', async function (assert) {
     await render(hbs`
       {{#let "foo" as |blockName|}}
