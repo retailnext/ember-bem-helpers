@@ -254,8 +254,8 @@ importers:
         specifier: 7.0.1
         version: 7.0.1(@babel/core@8.1.0)(ember-source@6.12.1(@glimmer/component@2.2.1)(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       ember-page-title:
-        specifier: 9.0.3
-        version: 9.0.3
+        specifier: 9.1.0
+        version: 9.1.0
       ember-qunit:
         specifier: 9.2.0
         version: 9.2.0(@ember/test-helpers@5.8.0(@babel/core@8.1.0))(qunit@3.0.0)
@@ -2783,9 +2783,8 @@ packages:
   ember-estree@0.9.0:
     resolution: {integrity: sha512-CExL0d6FbbffZaQkD0+zA5PaIgle3fbpzapuLVQ+QZfI2KLalnhuof0e85Zvfy/fh8+q9liw7dqUhQX4gibMBA==}
 
-  ember-page-title@9.0.3:
-    resolution: {integrity: sha512-fedRHUsvq8tIZgOii8jTrfAyeq+la/9H5eAzhNNwEyzo7nDMmqK2SxsyBUGXprd8fOacsPabLlzlucMi/4mUpA==}
-    engines: {node: 16.* || >= 18}
+  ember-page-title@9.1.0:
+    resolution: {integrity: sha512-+zBVORfzjnF8eNZ2kesVAV9+LaqIOvFDRK102c7jhpgM1oi3kbKRVh33+fRmF3tOFnWXwxbSiRfOgHS4rpMw+Q==}
 
   ember-qunit@9.2.0:
     resolution: {integrity: sha512-y/v9D7/wfH9fWh6p6NPNZ4KMJ97ZdowoASNmLvLrrzDYSVHJDbbbOfFMKLfdvHF942PHMlf6NulKVezO4yNfmw==}
@@ -8821,7 +8820,7 @@ snapshots:
       content-tag: 4.2.0
       oxc-parser: 0.130.0
 
-  ember-page-title@9.0.3:
+  ember-page-title@9.1.0:
     dependencies:
       '@embroider/addon-shim': 1.11.0
       '@simple-dom/document': 1.4.0
