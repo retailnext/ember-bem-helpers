@@ -67,7 +67,7 @@
     "@embroider/compat": "4.1.28",
     "@embroider/core": "4.6.10",
     "@embroider/macros": "1.21.4",
-    "@embroider/vite": "1.8.0",
+    "@embroider/vite": "1.8.1",
     "@eslint/js": "10.0.1",
     "@glimmer/component": "2.2.1",
     "@glint/ember-tsc": "1.14.4",
