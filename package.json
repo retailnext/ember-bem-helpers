@@ -76,7 +76,7 @@
     "@rollup/plugin-alias": "6.0.1",
     "@rollup/plugin-babel": "7.1.0",
     "@types/qunit": "2.19.14",
-    "babel-plugin-ember-template-compilation": "4.0.1",
+    "babel-plugin-ember-template-compilation": "4.0.2",
     "concurrently": "10.0.7",
     "ember-cli-htmlbars": "7.0.1",
     "ember-page-title": "9.1.0",
